@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<dictionary lang="swedish">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>all</word>
+<word>alla</word>
+<word>allestädes</word>
+<word>allra</word>
+<word>alls</word>
+<word>allt</word>
+<word>alltför</word>
+<word>alltid</word>
+<word>allting</word>
+<word>alltjämt</word>
+<word>alltmer</word>
+<word>alltnog</word>
+<word>alltsammans</word>
+<word>alltså</word>
+<word>annorlunda</word>
+<word>ar</word>
+<word>att</word>
+<word>av</word>
+<word>bara</word>
+<word>bland</word>
+<word>blev</word>
+<word>bli</word>
+<word>blir</word>
+<word>blivit</word>
+<word>de</word>
+<word>dem</word>
+<word>den</word>
+<word>denna</word>
+<word>densamme</word>
+<word>dess</word>
+<word>dessa</word>
+<word>dessförinnan</word>
+<word>det</word>
+<word>detta</word>
+<word>dig</word>
+<word>dit</word>
+<word>dittills</word>
+<word>dock</word>
+<word>du</word>
+<word>då</word>
+<word>där</word>
+<word>däremot</word>
+<word>därför</word>
+<word>eftersom</word>
+<word>ej</word>
+<word>eller</word>
+<word>emedan</word>
+<word>emellan</word>
+<word>emellanåt</word>
+<word>emellertid</word>
+<word>en</word>
+<word>endast</word>
+<word>endera</word>
+<word>envar</word>
+<word>enär</word>
+<word>er</word>
+<word>ett</word>
+<word>fast</word>
+<word>fastän</word>
+<word>fick</word>
+<word>finnas</word>
+<word>flera</word>
+<word>flesta</word>
+<word>från</word>
+<word>få</word>
+<word>får</word>
+<word>fåt</word>
+<word>förrän</word>
+<word>ha</word>
+<word>han</word>
+<word>heller</word>
+<word>henne</word>
+<word>hit</word>
+<word>hittills</word>
+<word>hitåt</word>
+<word>hon</word>
+<word>honom</word>
+<word>hur</word>
+<word>här</word>
+<word>i</word>
+<word>icke</word>
+<word>ifall</word>
+<word>ifrån</word>
+<word>igen</word>
+<word>igenom</word>
+<word>in</word>
+<word>ingen</word>
+<word>ingendera</word>
+<word>inget</word>
+<word>innan</word>
+<word>innanför</word>
+<word>inne</word>
+<word>ja</word>
+<word>jag</word>
+<word>jo</word>
+<word>kan</word>
+<word>kunde</word>
+<word>kunna</word>
+<word>kunnat</word>
+<word>man</word>
+<word>med</word>
+<word>medan</word>
+<word>mellan</word>
+<word>men</word>
+<word>mer</word>
+<word>mest</word>
+<word>mig</word>
+<word>mycket</word>
+<word>många</word>
+<word>måst</word>
+<word>måsta</word>
+<word>ned</word>
+<word>nedanför</word>
+<word>nedåt</word>
+<word>nej</word>
+<word>ni</word>
+<word>nu</word>
+<word>nyss</word>
+<word>någon</word>
+<word>någondera</word>
+<word>någonsin</word>
+<word>någonstans</word>
+<word>någonting</word>
+<word>några</word>
+<word>när</word>
+<word>och</word>
+<word>också</word>
+<word>om</word>
+<word>oss</word>
+<word>ovan</word>
+<word>ovanför</word>
+<word>ovanpå</word>
+<word>på</word>
+<word>sedan</word>
+<word>senare</word>
+<word>sin</word>
+<word>själv</word>
+<word>ska</word>
+<word>skall</word>
+<word>skulle</word>
+<word>slags</word>
+<word>snart</word>
+<word>som</word>
+<word>somliga</word>
+<word>stundom</word>
+<word>så</word>
+<word>sådan</word>
+<word>således</word>
+<word>sålunda</word>
+<word>såsom</word>
+<word>såvida</word>
+<word>såvitt</word>
+<word>sällan</word>
+<word>tack</word>
+<word>tillbaka</word>
+<word>tills</word>
+<word>upp</word>
+<word>ur</word>
+<word>ut</word>
+<word>utan</word>
+<word>va</word>
+<word>vad</word>
+<word>var</word>
+<word>vara</word>
+<word>varandra</word>
+<word>varav</word>
+<word>vardera</word>
+<word>varenda</word>
+<word>varför</word>
+<word>varifrån</word>
+<word>varje</word>
+<word>vart</word>
+<word>vem</word>
+<word>vi</word>
+<word>vid</word>
+<word>vilja</word>
+<word>vilka</word>
+<word>vilken</word>
+<word>vilket</word>
+<word>vill</word>
+<word>åt</word>
+<word>åtskillig</word>
+<word>åtskilligt</word>
+<word>än</word>
+<word>ändå</word>
+<word>ännu</word>
+<word>äntligen</word>
+<word>är</word>
+<word>även</word>
+<word>ävensom</word>
+<word>ömsom</word>
+<word>över</word>
+<word>överallt</word>
+ </grader-tc>
+</dictionary>

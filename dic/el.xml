@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<dictionary lang="greek">
+ <stemmer>
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+	 
+	 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+  
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>από</word>
+<word>για</word>
+<word>δεν</word>
+<word>επειδή</word>
+<word>η</word>
+<word>ή</word>
+<word>κάθε</word>
+<word>καθένας</word>
+<word>και</word>
+<word>κανείς</word>
+<word>κατά</word>
+<word>με</word>
+<word>να</word>
+<word>πρέπει</word>
+<word>σε</word>
+<word>τα</word>
+<word>το</word>
+<word>ως</word>
+ </grader-tc>
+</dictionary>

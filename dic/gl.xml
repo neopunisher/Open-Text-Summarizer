@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<dictionary lang="galician">
+ <stemmer>
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+  
+  
+  
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+  
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>a</word>
+<word>acá</word>
+<word>acó</word>
+<word>actual</word>
+<word>actualmente</word>
+<word>adiante</word>
+<word>agás</word>
+<word>agora</word>
+<word>aí</word>
+<word>ainda</word>
+<word>algo</word>
+<word>alguén</word>
+<word>algun</word>
+<word>alguns</word>
+<word>algures</word>
+<word>ali</word>
+<word>aló</word>
+<word>ambos</word>
+<word>anterior</word>
+<word>anteriormente</word>
+<word>antes</word>
+<word>aparte</word>
+<word>apenas</word>
+<word>aquel</word>
+<word>aquela</word>
+<word>aquelas</word>
+<word>aqueles</word>
+<word>aqui</word>
+<word>aquilo</word>
+<word>as</word>
+<word>asi</word>
+<word>através</word>
+<word>baixo</word>
+<word>ben</word>
+<word>bon</word>
+<word>ca</word>
+<word>cada</word>
+<word>cal</word>
+<word>cando</word>
+<word>canto</word>
+<word>cedo</word>
+<word>co</word>
+<word>coa</word>
+<word>coas</word>
+<word>comigo</word>
+<word>como</word>
+<word>con</word>
+<word>connosco</word>
+<word>consigo</word>
+<word>contodo</word>
+<word>convosco</word>
+<word>cos</word>
+<word>cuxa</word>
+<word>cuxas</word>
+<word>cuxo</word>
+<word>cuxos</word>
+<word>de</word>
+<word>debe</word>
+<word>deber</word>
+<word>deberia</word>
+<word>deberíamos</word>
+<word>debes</word>
+<word>del</word>
+<word>dela</word>
+<word>delas</word>
+<word>deles</word>
+<word>demais</word>
+<word>desde</word>
+<word>despois</word>
+<word>di</word>
+<word>dicer</word>
+<word>diso</word>
+<word>dixemos</word>
+<word>dixo</word>
+<word>dous</word>
+<word>duas</word>
+<word>e</word>
+<word>é</word>
+<word>eis</word>
+<word>el</word>
+<word>ela</word>
+<word>elas</word>
+<word>eles</word>
+<word>en</word>
+<word>entón</word>
+<word>entre</word>
+<word>era</word>
+<word>érades</word>
+<word>éramos</word>
+<word>eran</word>
+<word>eras</word>
+<word>es</word>
+<word>esta</word>
+<word>está</word>
+<word>estaba</word>
+<word>estábades</word>
+<word>estábamos</word>
+<word>estaban</word>
+<word>estabas</word>
+<word>estades</word>
+<word>estamos</word>
+<word>están</word>
+<word>estar</word>
+<word>estás</word>
+<word>estive</word>
+<word>estiveche</word>
+<word>estivemos</word>
+<word>estiveron</word>
+<word>estivo</word>
+<word>estou</word>
+<word>etc</word>
+<word>eu</word>
+<word>excepto</word>
+<word>final</word>
+<word>foche</word>
+<word>foi</word>
+<word>fomos</word>
+<word>foran</word>
+<word>fostes</word>
+<word>fun</word>
+<word>ha</word>
+<word>ides</word>
+<word>iso</word>
+<word>isto</word>
+<word>logo</word>
+<word>máis</word>
+<word>máximo</word>
+<word>meu</word>
+<word>min</word>
+<word>miña</word>
+<word>moitas</word>
+<word>moito</word>
+<word>moitos</word>
+<word>nada</word>
+<word>nen</word>
+<word>nengun</word>
+<word>nengunha</word>
+<word>ninguén</word>
+<word>non</word>
+<word>nós</word>
+<word>nosa</word>
+<word>nosas</word>
+<word>noso</word>
+<word>nosos</word>
+<word>o</word>
+<word>obtén</word>
+<word>obter</word>
+<word>obtido</word>
+<word>obtivemos</word>
+<word>obtivo</word>
+<word>onde</word>
+<word>os</word>
+<word>outra</word>
+<word>outras</word>
+<word>outro</word>
+<word>outros</word>
+<word>par</word>
+<word>para</word>
+<word>parado</word>
+<word>parece</word>
+<word>parecer</word>
+<word>pensa</word>
+<word>pode</word>
+<word>poden</word>
+<word>poderia</word>
+<word>por</word>
+<word>primeira</word>
+<word>primeiro</word>
+<word>própria</word>
+<word>próprias</word>
+<word>próprio</word>
+<word>próprios</word>
+<word>que</word>
+<word>quen</word>
+<word>riba</word>
+<word>se</word>
+<word>ser</word>
+<word>sob</word>
+<word>sodes</word>
+<word>somos</word>
+<word>son</word>
+<word>sua</word>
+<word>tamén</word>
+<word>tan</word>
+<word>temos</word>
+<word>ten</word>
+<word>tendes</word>
+<word>teñen</word>
+<word>teño</word>
+<word>ter</word>
+<word>tes</word>
+<word>teu</word>
+<word>ti</word>
+<word>tiña</word>
+<word>tíñades</word>
+<word>tíñamos</word>
+<word>tiñan</word>
+<word>tiñas</word>
+<word>tiveche</word>
+<word>tivemos</word>
+<word>tiven</word>
+<word>tiveron</word>
+<word>tivestes</word>
+<word>tivo</word>
+<word>todo</word>
+<word>tu</word>
+<word>tua</word>
+<word>último</word>
+<word>un</word>
+<word>unha</word>
+<word>unhas</word>
+<word>unicamente</word>
+<word>uns</word>
+<word>vai</word>
+<word>vamos</word>
+<word>van</word>
+<word>várias</word>
+<word>vários</word>
+<word>vos</word>
+<word>vós</word>
+<word>vosa</word>
+<word>vosas</word>
+<word>voso</word>
+<word>vosos</word>
+<word>vou</word>
+<word>xamais</word>
+ </grader-tc>
+</dictionary>

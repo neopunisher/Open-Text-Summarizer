@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<dictionary lang="romanian">
+ <stemmer> 
+ 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>acasă</word>
+<word>acest</word>
+<word>acolo</word>
+<word>acum</word>
+<word>acuma</word>
+<word>ai</word>
+<word>aicea</word>
+<word>aici</word>
+<word>alt</word>
+<word>am</word>
+<word>apoi</word>
+<word>aproape</word>
+<word>apropro</word>
+<word>are</word>
+<word>aşa</word>
+<word>au</word>
+<word>avea</word>
+<word>avem</word>
+<word>aveţi</word>
+<word>ca</word>
+<word>că</word>
+<word>când</word>
+<word>ce</word>
+<word>cine</word>
+<word>cît</word>
+<word>cîtă</word>
+<word>cîte</word>
+<word>cîţi</word>
+<word>cu</word>
+<word>da</word>
+<word>deci</word>
+<word>decît</word>
+<word>deja</word>
+<word>doamna</word>
+<word>doi</word>
+<word>domnişoara</word>
+<word>domnul</word>
+<word>două</word>
+<word>dumneaei</word>
+<word>dumnealor</word>
+<word>dumnealui</word>
+<word>dumneata</word>
+<word>dumneavoastră</word>
+<word>după</word>
+<word>ea</word>
+<word>ei</word>
+<word>el</word>
+<word>ele</word>
+<word>este</word>
+<word>eşti</word>
+<word>eu</word>
+<word>face</word>
+<word>fi</word>
+<word>fiindcă</word>
+<word>iar</word>
+<word>ieri</word>
+<word>în</word>
+<word>încă</word>
+<word>într</word>
+<word>între</word>
+<word>la</word>
+<word>lîngă</word>
+<word>lor</word>
+<word>lui</word>
+<word>mai</word>
+<word>merge</word>
+<word>meu</word>
+<word>mîine</word>
+<word>mult</word>
+<word>nicăieri</word>
+<word>nici</word>
+<word>niciodată</word>
+<word>nimeni</word>
+<word>nimic</word>
+<word>nişte</word>
+<word>noi</word>
+<word>nostru</word>
+<word>nu</word>
+<word>o</word>
+<word>pe</word>
+<word>pentru</word>
+<word>puţin</word>
+<word>sînt</word>
+<word>sînt</word>
+<word>sîntem</word>
+<word>sînteţi</word>
+<word>spre</word>
+<word>sub</word>
+<word>şi</word>
+<word>tot</word>
+<word>tu</word>
+<word>un</word>
+<word>una</word>
+<word>unde</word>
+<word>unei</word>
+<word>unor</word>
+<word>unu</word>
+<word>unui</word>
+<word>unul</word>
+<word>voi</word>
+ </grader-tc>
+</dictionary>

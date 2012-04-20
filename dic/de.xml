@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<dictionary lang="german">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+	 
+	 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+ 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>ab</word>
+<word>aber</word>
+<word>ähnlich</word>
+<word>aehnlich</word>
+<word>all</word>
+<word>alle</word>
+<word>allein</word>
+<word>alles</word>
+<word>als</word>
+<word>also</word>
+<word>am</word>
+<word>an</word>
+<word>andere</word>
+<word>anderes</word>
+<word>anstatt</word>
+<word>auch</word>
+<word>auf</word>
+<word>aus</word>
+<word>ausser</word>
+<word>ausserhalb</word>
+<word>bald</word>
+<word>bei</word>
+<word>beide</word>
+<word>beim</word>
+<word>bin</word>
+<word>bis</word>
+<word>bist</word>
+<word>bitte</word>
+<word>brauche</word>
+<word>brauchen</word>
+<word>braucht</word>
+<word>co</word>
+<word>da</word>
+<word>damit</word>
+<word>dann</word>
+<word>darf</word>
+<word>darüber</word>
+<word>darueber</word>
+<word>das</word>
+<word>daß</word>
+<word>dass</word>
+<word>dein</word>
+<word>deine</word>
+<word>dem</word>
+<word>den</word>
+<word>denen</word>
+<word>denke</word>
+<word>denken</word>
+<word>denkst</word>
+<word>der</word>
+<word>des</word>
+<word>dich</word>
+<word>die</word>
+<word>diese</word>
+<word>dieser</word>
+<word>dir</word>
+<word>doch</word>
+<word>dort</word>
+<word>drei</word>
+<word>du</word>
+<word>durch</word>
+<word>dürfen</word>
+<word>duerfen</word>
+<word>ehemalig</word>
+<word>eher</word>
+<word>ein</word>
+<word>eine</word>
+<word>einem</word>
+<word>einen</word>
+<word>einer</word>
+<word>eines</word>
+<word>einmal</word>
+<word>entlang</word>
+<word>er</word>
+<word>erhalt</word>
+<word>erhalten</word>
+<word>erste</word>
+<word>es</word>
+<word>etliche</word>
+<word>etwa</word>
+<word>etwas</word>
+<word>fahre</word>
+<word>fahren</word>
+<word>fahrt</word>
+<word>fast</word>
+<word>frau</word>
+<word>fuer</word>
+<word>für</word>
+<word>fuer</word>
+<word>geben</word>
+<word>gegen</word>
+<word>gegenüber</word>
+<word>gegenueber</word>
+<word>geh</word>
+<word>gehabt</word>
+<word>gehen</word>
+<word>geht</word>
+<word>gekonnt</word>
+<word>gelegen</word>
+<word>gelasse</word>
+<word>gelassen</word>
+<word>gelasst</word>
+<word>genug</word>
+<word>gerade</word>
+<word>gesagt</word>
+<word>gesetzt</word>
+<word>getan</word>
+<word>gewesen</word>
+<word>gibt</word>
+<word>gmbh</word>
+<word>gut</word>
+<word>guten</word>
+<word>gutes</word>
+<word>hab</word>
+<word>habe</word>
+<word>haben</word>
+<word>habt</word>
+<word>hast</word>
+<word>hat</word>
+<word>hatte</word>
+<word>häufig</word>
+<word>haeufig</word>
+<word>herr</word>
+<word>heute</word>
+<word>hier</word>
+<word>ich</word>
+<word>ihn</word>
+<word>ihr</word>
+<word>im</word>
+<word>immer</word>
+<word>in</word>
+<word>initiale</word>
+<word>irgend</word>
+<word>irgendein</word>
+<word>ist</word>
+<word>ja</word>
+<word>jede</word>
+<word>jeden</word>
+<word>jeder</word>
+<word>jedes</word>
+<word>jedoch</word>
+<word>jemand</word>
+<word>jetzt</word>
+<word>kann</word>
+<word>kein</word>
+<word>keine</word>
+<word>keinen</word>
+<word>kenne</word>
+<word>kennen</word>
+<word>kennst</word>
+<word>kennt</word>
+<word>klein</word>
+<word>kleiner</word>
+<word>komm</word>
+<word>kommen</word>
+<word>kommt</word>
+<word>können</word>
+<word>koennen</word>
+<word>konnte</word>
+<word>lag</word>
+<word>letztes</word>
+<word>liegen</word>
+<word>los</word>
+<word>mache</word>
+<word>machen</word>
+<word>machst</word>
+<word>macht</word>
+<word>mag</word>
+<word>man</word>
+<word>manchmal</word>
+<word>mann</word>
+<word>mehr</word>
+<word>mein</word>
+<word>meisten</word>
+<word>mich</word>
+<word>mir</word>
+<word>mit</word>
+<word>möglicherweise</word>
+<word>moeglicherweise</word>
+<word>muss</word>
+<word>müssen</word>
+<word>muessen</word>
+<word>musste</word>
+<word>nach</word>
+<word>nächst</word>
+<word>naechst</word>
+<word>nahe</word>
+<word>nein</word>
+<word>nicht</word>
+<word>nichts</word>
+<word>nie</word>
+<word>niemand</word>
+<word>noch</word>
+<word>nur</word>
+<word>oberhalb</word>
+<word>oder</word>
+<word>oft</word>
+<word>ohne</word>
+<word>ok</word>
+<word>okay</word>
+<word>per</word>
+<word>sache</word>
+<word>sachen</word>
+<word>sagen</word>
+<word>sagt</word>
+<word>satz</word>
+<word>schon</word>
+<word>sehe</word>
+<word>sehen</word>
+<word>sehr</word>
+<word>seid</word>
+<word>seiht</word>
+<word>sein</word>
+<word>seine</word>
+<word>seiner</word>
+<word>seit</word>
+<word>selbar</word>
+<word>selben</word>
+<word>selbst</word>
+<word>selten</word>
+<word>sich</word>
+<word>sie</word>
+<word>sind</word>
+<word>sitzen</word>
+<word>so</word>
+<word>sobald</word>
+<word>sollt</word>
+<word>sollte</word>
+<word>sollten</word>
+<word>sowie</word>
+<word>tat</word>
+<word>trotz</word>
+<word>tue</word>
+<word>tun</word>
+<word>tust</word>
+<word>tut</word>
+<word>über</word>
+<word>ueber</word>
+<word>um</word>
+<word>und</word>
+<word>uns</word>
+<word>unser</word>
+<word>unten</word>
+<word>unter</word>
+<word>unterhalb</word>
+<word>unterschiedlich</word>
+<word>viel</word>
+<word>viele</word>
+<word>vier</word>
+<word>von</word>
+<word>vor</word>
+<word>vorher</word>
+<word>während</word>
+<word>waehrend</word>
+<word>wann</word>
+<word>war</word>
+<word>warum</word>
+<word>was</word>
+<word>wegen</word>
+<word>weil</word>
+<word>weise</word>
+<word>welche</word>
+<word>welchem</word>
+<word>wem</word>
+<word>wen</word>
+<word>wenige</word>
+<word>wenn</word>
+<word>wer</word>
+<word>werde</word>
+<word>werden</word>
+<word>wessen</word>
+<word>wie</word>
+<word>wieder</word>
+<word>will</word>
+<word>willst</word>
+<word>wir</word>
+<word>wird</word>
+<word>wirklich</word>
+<word>wirst</word>
+<word>wissen</word>
+<word>wo</word>
+<word>wollen</word>
+<word>wurde</word>
+<word>z.b.</word>
+<word>zu</word>
+<word>zuerst</word>
+<word>zum</word>
+<word>zur</word>
+<word>zurück</word>
+<word>zurueck</word>
+<word>zwei</word>
+<word>zwischen</word>
+ </grader-tc>
+</dictionary>

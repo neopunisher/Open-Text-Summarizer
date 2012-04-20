@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<dictionary lang="Hebrew">
+ <stemmer> 
+ 
+ <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>|</rule>
+	 </manual>
+ 
+    <post>
+       <rule>תי|</rule>
+       <rule>ה|</rule>
+       <rule>ו|</rule>
+       <rule>ות|</rule>
+       <rule>ים|</rule>
+    </post>
+   <pre>
+       <rule>לכש|</rule>
+       <rule>ב|</rule>
+       <rule>כש|</rule>
+       <rule>ש|</rule>
+       <rule>כ|</rule>
+       <rule>ל|</rule>
+       <rule>ה|</rule>
+   </pre> 
+   
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>מר.</rule>
+	  <rule>דר.</rule>  
+	  </linedontbreak>
+   </parser>
+   
+ <grader-tc>
+<word>אותי</word>
+<word>פ</word>
+<word>מ</word>
+<word>ליד</word>
+<word>שלא</word>
+<word>שאני</word>
+<word>אחרי</word>
+<word>ואני</word>
+<word>אך</word>
+<word>להיות</word>
+<word>בה</word>
+<word>לאחר</word>
+<word>בין</word>
+<word>עוד</word>
+<word>האלה</word>
+<word>כאלה</word>
+<word>דברים</word>
+<word>בערך</word>
+<word>עליו</word>
+<word>בגלל</word>
+<word>מן</word>
+<word>ג</word>
+<word>ם</word>
+<word>ואף</word>
+<word>בו</word>
+<word>קודם</word>
+<word>מייד</word>
+<word>מיד</word>
+<word>במשך</word>
+<word>בה</word>
+<word>והם</word>
+<word>מכל</word>
+<word>ללא</word>
+<word>אחרי</word>
+<word>לפני</word>
+<word>שאחרי</word>
+<word>מעל</word>
+<word>מ</word>
+<word>ושם</word>
+<word>באותו</word>
+<word>באו</word>
+<word>לזה</word>
+<word>לכן</word>
+<word>ו</word>
+<word>ואת</word>
+<word>כלל</word>
+<word>למען</word>
+<word>והן</word>
+<word>והם</word>
+<word>שני</word>
+<word>הייתה</word>
+<word>ועל</word>
+<word>עוד</word>
+<word>לאחר</word>
+<word>בל</word>
+<word>אלא</word>
+<word>ניכר</word>
+<word>של</word>
+<word>כן</word>
+<word>לא</word>
+<word>כאן</word>
+<word>היינו</word>
+<word>ובלי</word>
+<word>היו</word>
+<word>ולא</word>
+<word>וכן</word>
+<word>כזה</word>
+<word>כמעט</word>
+<word>וגם</word>
+<word>גם</word>
+<word>בנוסף</word>
+<word>כול</word>
+<word>זה</word>
+<word>כמו</word>
+<word>בגלל</word>
+<word>היה</word>
+<word>יהי</word>
+<word>שניהם</word>
+<word>שניהן</word>
+<word>אבל</word>
+<word>יכול</word>
+<word>עלול</word>
+<word>עשה</word>
+<word>יעשה</word>
+<word>אפילו</word>
+<word>מעט</word>
+<word>הרבה</word>
+<word>כמה</word>
+<word>אז</word>
+<word>יש</word>
+<word>אין</word>
+<word>ראשון</word>
+<word>כזה</word>
+<word>לנו</word>
+<word>להם</word>
+<word>להן</word>
+<word>לי</word>
+<word>לו</word>
+<word>לה</word>
+<word>הוא</word>
+<word>היא</word>
+<word>שהוא</word>
+<word>שהיא</word>
+<word>שהם</word>
+<word>שהן</word>
+<word>הם</word>
+<word>הן</word>
+<word>שהיה</word>
+<word>אנחנו</word>
+<word>שלה</word>
+<word>שלו</word>
+<word>איך</word>
+<word>ככה</word>
+<word>אבל</word>
+<word>אני</word>
+<word>אם</word>
+<word>עם</word>
+<word>זה</word>
+<word>זו</word>
+<word>רק</word>
+<word>ועל</word>
+<word>ולא</word>
+<word>וכן</word>
+<word>אכן</word>
+<word>כמו</word>
+<word>בערך</word>
+<word>יותר</word>
+<word>פחות</word>
+<word>הכי</word>
+<word>שלי</word>
+<word>שלה</word>
+<word>שלהם</word>
+<word>שלנו</word>
+<word>לא</word>
+<word>כן</word>
+<word>על</word>
+<word>או</word>
+<word>וגם</word>
+<word>גם</word>
+<word>אחר</word>
+<word>אולי</word>
+<word>אבל</word>
+<word>נראה</word>
+<word>צריך</word>
+<word>אז</word>
+<word>כמה</word>
+<word>כמו</word>
+<word>משהו</word>
+<word>עדיין</word>
+<word>עד</word>
+<word>זה</word>
+<word>עד</word>
+<word>אנחנו</word>
+<word>הם</word>
+<word>הן</word>
+<word>מאוד</word>
+<word>היה</word>
+<word>יהיה</word>
+<word>דרך</word>
+<word>מה</word>
+<word>מי</word>
+<word>עם</word>
+<word>כן</word>
+<word>לא</word>
+<word>אמר</word>
+<word>אמרה</word>
+<word>שוב</word>
+<word>אף</word>
+<word>אחד</word>
+<word>בגלל</word>
+<word>כי</word>
+<word>גם</word>
+<word>לפני</word>
+<word>הכי</word>
+<word>מספיק</word>
+<word>כול</word>
+<word>למה</word>
+<word>מתחת</word>
+<word>את</word>
+<word>של</word>
+<word>על-ידי</word>
+<word>עם</word>
+<word>כדי</word>
+<word>בכך</word>
+<word>הן</word>
+<word>לפי</word>
+<word>על-פי</word>
+<word>לו</word>
+<word>לה</word>
+<word>מה</word>
+<word>אין</word>
+<word>כשזה</word>
+<word>כך</word>
+<word>כיוון</word>
+<word>זו</word>
+<word>וגם</word>
+<word>הכי</word>
+<word>ואלה</word>
+<word>ואלו</word>
+<word>הם</word>
+<word>לבין</word>
+<word>למה</word>
+<word>לכאורה</word>
+<word>כך</word>
+<word>משום</word>
+<word>זוהי</word>
+<word>כי</word>
+<word>וכי</word>
+<word>אם</word>
+<word>אכן</word>
+<word>לכך</word>
+<word>את</word>
+<word>כל</word>
+<word>וכל</word>
+<word>השני</word>
+<word>הראשון</word>
+<word>השלישי</word>
+<word>הוא</word>
+<word>ומי</word>
+<word>מאז</word>
+<word>אל</word>
+<word>על</word>
+<word>הזו</word>
+<word>הזה</word>
+<word>ל</word>
+<word>נ</word>
+<word>פעם</word>
+<word>אחת</word>
+<word>אותו</word>
+<word>ב</word>
+<word>ר</word>
+<word>שום</word>
+<word>ממש</word>
+<word>היכן</word>
+<word>בכל</word>
+<word>בכל</word>
+<word>היתה</word>
+<word>אשר</word>
+<word>הכל</word>
+<word>זאת</word>
+<word>מהם</word>
+<word>כזו</word>
+<word>כבר</word>
+<word>מנת</word>
+<word>שהיו</word>
+<word>אפשר</word>
+<word>יהיו</word>
+<word>נ</word>
+<word>אחד</word>
+<word>שלך</word>
+<word>שאתה</word>
+<word>אינו</word>
+<word>איננו</word>
+<word>בעיקר</word>
+<word>ואם</word>
+<word>ועם</word>
+<word>אזי</word>
+<word>בקשר</word>
+<word>איך</word>
+<word>באיזו</word>
+<word>באיזה</word>
+<word>שזה</word>
+<word>אליו</word>
+<word>אליהם</word>
+<word>וכמו</word>
+ </grader-tc>
+</dictionary>

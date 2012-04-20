@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<dictionary lang="portuguese">
+ <stemmer>
+ 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+	 
+	 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+  
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>000</word>
+<word>a</word>
+<word>abaixo</word>
+<word>acerca</word>
+<word>acima</word>
+<word>adiante</word>
+<word>agora</word>
+<word>ah</word>
+<word>ah-ah</word>
+<word>ai</word>
+<word>ainda</word>
+<word>além</word>
+<word>algo</word>
+<word>alguém</word>
+<word>algum</word>
+<word>alguns</word>
+<word>algures</word>
+<word>alhures</word>
+<word>ali</word>
+<word>alô</word>
+<word>ambos</word>
+<word>anterior</word>
+<word>anteriormente</word>
+<word>antes</word>
+<word>apart</word>
+<word>apenas</word>
+<word>aqueles</word>
+<word>aqui</word>
+<word>aquilo</word>
+<word>as</word>
+<word>assim</word>
+<word>através</word>
+<word>atual</word>
+<word>atualmente</word>
+<word>been</word>
+<word>bem</word>
+<word>bom</word>
+<word>cá</word>
+<word>cada</word>
+<word>caminho</word>
+<word>causa</word>
+<word>cedo</word>
+<word>chamada</word>
+<word>chamado</word>
+<word>co</word>
+<word>coisas</word>
+<word>colocado</word>
+<word>colocar</word>
+<word>com</word>
+<word>como</word>
+<word>contudo</word>
+<word>couldn</word>
+<word>cujo</word>
+<word>d</word>
+<word>de</word>
+<word>define</word>
+<word>deixar</word>
+<word>dela</word>
+<word>dele</word>
+<word>deles</word>
+<word>demais</word>
+<word>demasiadamente</word>
+<word>depois</word>
+<word>depressa</word>
+<word>desde</word>
+<word>desligado</word>
+<word>deve</word>
+<word>deveria</word>
+<word>didn</word>
+<word>diferente</word>
+<word>directamente</word>
+<word>disse</word>
+<word>disso</word>
+<word>dito</word>
+<word>diz</word>
+<word>doesn</word>
+<word>dois</word>
+<word>don</word>
+<word>e</word>
+<word>é</word>
+<word>eis</word>
+<word>ela</word>
+<word>elas</word>
+<word>ele</word>
+<word>eles</word>
+<word>Eles</word>
+<word>eles</word>
+<word>em</word>
+<word>enquanto</word>
+<word>Enquanto</word>
+<word>então</word>
+<word>entre</word>
+<word>era</word>
+<word>eram</word>
+<word>éramos</word>
+<word>eras</word>
+<word>éreis</word>
+<word>és</word>
+<word>esta</word>
+<word>está</word>
+<word>estais</word>
+<word>estamos</word>
+<word>estão</word>
+<word>estar</word>
+<word>estás</word>
+<word>estava</word>
+<word>estavam</word>
+<word>estávamos</word>
+<word>estavas</word>
+<word>estáveis</word>
+<word>este</word>
+<word>estes</word>
+<word>esteve</word>
+<word>estive</word>
+<word>estivemos</word>
+<word>estiveram</word>
+<word>estiveste</word>
+<word>estou</word>
+<word>etc</word>
+<word>eu</word>
+<word>excepcionalmente</word>
+<word>excepto</word>
+<word>exceto</word>
+<word>faz</word>
+<word>fazer</word>
+<word>feito</word>
+<word>fez</word>
+<word>final</word>
+<word>finalizado</word>
+<word>foi</word>
+<word>fomos</word>
+<word>fora</word>
+<word>foram</word>
+<word>foste</word>
+<word>fostes</word>
+<word>frequente</word>
+<word>fui</word>
+<word>há</word>
+<word>i.e</word>
+<word>ides</word>
+<word>inicial</word>
+<word>ir</word>
+<word>isn</word>
+<word>isso</word>
+<word>it's</word>
+<word>itself</word>
+<word>já</word>
+<word>jamais</word>
+<word>ligado</word>
+<word>ll</word>
+<word>logo</word>
+<word>m</word>
+<word>mais</word>
+<word>mas</word>
+<word>máximo</word>
+<word>menor</word>
+<word>menos</word>
+<word>mesmo</word>
+<word>meu</word>
+<word>minha</word>
+<word>muito</word>
+<word>muitos</word>
+<word>must</word>
+<word>nada</word>
+<word>não</word>
+<word>nele</word>
+<word>nem</word>
+<word>nisso</word>
+<word>nither</word>
+<word>nos</word>
+<word>Nos</word>
+<word>nós</word>
+<word>nossa</word>
+<word>nosso</word>
+<word>novamente</word>
+<word>nt</word>
+<word>o</word>
+<word>obter</word>
+<word>obtido</word>
+<word>Oh</word>
+<word>ok</word>
+<word>okay</word>
+<word>onde</word>
+<word>ora</word>
+<word>os</word>
+<word>ou</word>
+<word>outra</word>
+<word>outrem</word>
+<word>outro</word>
+<word>outrora</word>
+<word>outrossim</word>
+<word>par</word>
+<word>para</word>
+<word>parada</word>
+<word>parado</word>
+<word>parece</word>
+<word>pensa</word>
+<word>pensar</word>
+<word>pode</word>
+<word>podem</word>
+<word>podia</word>
+<word>por</word>
+<word>porém</word>
+<word>porque</word>
+<word>porquê</word>
+<word>pot</word>
+<word>pouco</word>
+<word>poucos</word>
+<word>precisa</word>
+<word>prefer</word>
+<word>preferia</word>
+<word>preferir</word>
+<word>primeiro</word>
+<word>própria</word>
+<word>próprio</word>
+<word>próximo</word>
+<word>qualquer</word>
+<word>Quando</word>
+<word>quando</word>
+<word>quase</word>
+<word>quatro</word>
+<word>que</word>
+<word>quem</word>
+<word>Quem</word>
+<word>quer</word>
+<word>re</word>
+<word>realmente</word>
+<word>repetir</word>
+<word>s</word>
+<word>sabe</word>
+<word>são</word>
+<word>se</word>
+<word>seguinte</word>
+<word>sem</word>
+<word>sempre</word>
+<word>sendo</word>
+<word>ser</word>
+<word>seu</word>
+<word>sim</word>
+<word>sob</word>
+<word>sobre</word>
+<word>sois</word>
+<word>somos</word>
+<word>sou</word>
+<word>Sr</word>
+<word>sua</word>
+<word>suficiente</word>
+<word>t</word>
+<word>tal</word>
+<word>Talvês</word>
+<word>talvez</word>
+<word>também</word>
+<word>tanto</word>
+<word>tão</word>
+<word>tem</word>
+<word>têm</word>
+<word>temos</word>
+<word>tendes</word>
+<word>tenho</word>
+<word>tens</word>
+<word>ter</word>
+<word>teu</word>
+<word>teve</word>
+<word>tinha</word>
+<word>tinham</word>
+<word>tínhamos</word>
+<word>tinhas</word>
+<word>tínheis</word>
+<word>tive</word>
+<word>tivemos</word>
+<word>tiveram</word>
+<word>tiveste</word>
+<word>tivestes</word>
+<word>to</word>
+<word>todo</word>
+<word>topo</word>
+<word>três</word>
+<word>tu</word>
+<word>tua</word>
+<word>tudo</word>
+<word>último</word>
+<word>um</word>
+<word>uma</word>
+<word>unicamente</word>
+<word>up</word>
+<word>us</word>
+<word>use</word>
+<word>vai</word>
+<word>vais</word>
+<word>vamos</word>
+<word>vão</word>
+<word>várias</word>
+<word>vários</word>
+<word>ve</word>
+<word>vê</word>
+<word>vem</word>
+<word>vistas</word>
+<word>você</word>
+<word>vocês</word>
+<word>vós</word>
+<word>vosso</word>
+<word>vou</word>
+ </grader-tc>
+</dictionary>

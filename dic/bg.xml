@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<dictionary lang="bulgarian">
+ <stemmer>
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+  
+  
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+  
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+      <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>август</word>
+<word>април</word>
+<word>в</word>
+<word>всеки</word>
+<word>всичко</word>
+<word>вторник</word>
+<word>да</word>
+<word>декември</word>
+<word>за</word>
+<word>и</word>
+<word>или</word>
+<word>има</word>
+<word>което</word>
+<word>към</word>
+<word>май</word>
+<word>март</word>
+<word>на</word>
+<word>не</word>
+<word>неделя</word>
+<word>ноември</word>
+<word>октомври</word>
+<word>от</word>
+<word>петък</word>
+<word>по</word>
+<word>понеделник</word>
+<word>при</word>
+<word>с</word>
+<word>септември</word>
+<word>сряда</word>
+<word>сто</word>
+<word>събота</word>
+<word>трябва</word>
+<word>февруари</word>
+<word>хиляда</word>
+<word>че</word>
+<word>четвъртък</word>
+<word>юли</word>
+<word>юни</word>
+<word>януари</word>
+ </grader-tc>
+</dictionary>

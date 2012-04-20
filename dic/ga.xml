@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<dictionary lang="irish">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>a</word>
+<word>ach</word>
+<word>acu</word>
+<word>agaibh</word>
+<word>againn</word>
+<word>agam</word>
+<word>agat</word>
+<word>agus</word>
+<word>aici</word>
+<word>an</word>
+<word>anois</word>
+<word>anseo</word>
+<word>aois</word>
+<word>aon</word>
+<word>cad</word>
+<word>conas</word>
+<word>de</word>
+<word>dhá</word>
+<word>do</word>
+<word>dó</word>
+<word>dol</word>
+<word>é</word>
+<word>faic</word>
+<word>féad</word>
+<word>fós</word>
+<word>freisin</word>
+<word>gach</word>
+<word>gairid</word>
+<word>gan</word>
+<word>i</word>
+<word>í</word>
+<word>iad</word>
+<word>iadsan</word>
+<word>iomarca</word>
+<word>istigh</word>
+<word>le</word>
+<word>mé</word>
+<word>mise</word>
+<word>mo</word>
+<word>muid</word>
+<word>ná</word>
+<word>naid</word>
+<word>náid</word>
+<word>ó</word>
+<word>óir</word>
+<word>seisean</word>
+<word>seo</word>
+<word>siadsan</word>
+<word>sibh</word>
+<word>sibhse</word>
+<word>sinne</word>
+<word>tá</word>
+<word>tagann</word>
+<word>tagtha</word>
+<word>téann</word>
+<word>téigh</word>
+<word>thall</word>
+<word>thíos</word>
+<word>thuas</word>
+<word>timpeall</word>
+<word>tusa</word>
+<word>uiareanta</word>
+<word>uile</word>
+ </grader-tc>
+</dictionary>

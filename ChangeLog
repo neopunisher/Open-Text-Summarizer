@@ -1,0 +1,134 @@
+2003-12-16 Nadav Rotem <nadav256@hotmail.com>
+	
+	Started the work in Multi-document Summarization.
+
+2003-12-1 Nadav Rotem <nadav256@hotmail.com>
+	
+	Added a new API that brings the ability to check how two blocks of text
+	relate to oneanother; The functions in relations.c will return the inner product of
+	the two texts; in other words, the number of topics they share. 
+
+
+2003-08-9 Nadav Rotem <nadav256@hotmail.com>
+	
+	* New design:
+		1.parser
+		2.grader
+			(Term Count/Term Frequency) grader
+		3.highlighter
+		
+
+2003-07-20 Nadav Rotem <nadav256@hotmail.com>
+	
+	* Added stemming support. It was a bitch to implement!
+	* based en.xml
+
+2003-07-09 Nadav Rotem <nadav256@hotmail.com>
+
+	Supported languages:
+	(ca,cs,cy,da,de,en,eo,es,fi,fr,ga,he,hu,is,it,ms,nl,nn,pt,ro,ru,sv,uk,yi)
+	See readme for details.                                        
+
+
+2003-07-08 Nadav Rotem <nadav256@hotmail.com>
+
+	* Fixed the glib warnings when less then 4 words in article;
+
+2003-06-26 Nadav Rotem <nadav256@hotmail.com>
+
+	* Released 0.2.0
+
+2003-06-17 Nadav Rotem <nadav256@hotmail.com>
+
+	* Added a user_data pointer
+
+2003-05-31 Nadav Rotem <nadav256@hotmail.com>
+
+	* Added a structure analizer
+
+2003-05-29 Mark Gilbert <markgilbert@hotpop.com>
+
+	* doc/ots.txt: Edit to be more accurate and readable
+
+	* articles/otsenglish.txt (Added): Instructions on writing,
+	  eventually a summarizable article or I will move it
+	* TODO-mg (Added): State some ideas I was pondering 
+		(that I intend to work on)
+	* AUTHORS: Self
+
+2003-05-07 Nadav Rotem <nadav256@hotmail.com>
+
+	* Added a webservice perl demo under webservice/
+
+2003-05-05 Nadav Rotem <nadav256@hotmail.com>
+
+	* Release 0.1.0
+	* changed src/html src/text routine names
+	* src/html.c: Made new ots_get_html routine
+
+2003-05-04 Dom Lachowicz <cinamod@hotmail.com>
+
+	* src/text.c: Made new ots_doc_get_text routine
+	
+2003-05-03 Nadav Rotem <nadav256@hotmail.com>
+
+	* Added a new parser ots_stream_parse() -- parses unicode stream
+	old ots_parse_file() should be deprecated once otc.c is converted;
+
+2003-05-02 Dom Lachowicz <cinamod@hotmail.com>
+
+	* src/ots.c (main): Remove --text, as it should be an unspecified default
+	* README: remove % signs from --ratio, --text from documentation
+	* doc/ots.1: ditto
+	* doc/ots.txt: ditto
+	
+2003-05-02 Rui Miguel Silva Seabra <rms@1407.org>
+
+	* ots.spec.in: define a longer description from the README file;
+	explicitly set file permissions
+	
+2003-05-01 Dom Lachowicz <cinamod@hotmail.com>
+
+	* doc/ots.1: Include new help options, document short options (eg. -k 
+	instead of --keywords)
+	
+2003-05-01 Dom Lachowicz <cinamod@hotmail.com>
+
+	* Makefile.in: auto-generated files don't belong in cvs
+	* Makefile.am: add popt support
+	* configure.in: add popt support, print a blurb after running configure,
+	define VERSION properly
+	* src/Makefile.am: popt support, define VERSION properly
+	* src/grader.c: rearrange some fns so that they're all declared in the
+	correct order, 
+	* src/html.c: reorder the stream and OtsSentence arguments so that they're correct
+	* src/libots.h: s/ots_parse_stdin/ots_parse_file
+	* src/ots.c: Add popt support
+	* src/parser.c: s/ots_parse_stdin/ots_parse_file
+	
+2003-05-02 Nadav Rotem <nadav256@hotmail.com>
+
+	* change ots_print_* functions to use FILE *stream
+	* add --file  and --out file support
+
+2003-05-01 Nadav Rotem <nadav256@hotmail.com>
+
+	* change functions to ots_ namespace
+	* fixed the ots_free_article() memory flood
+	* Add various comments
+
+2003-04-30 Dom Lachowicz <cinamod@hotmail.com>
+
+	* configure.in: Gtk+-doc documentation start
+	* doc/Makefile.am: Gtk+-doc documentation start
+	* Add various .cvsignore files
+	
+2003-04-30 Dom Lachowicz <cinamod@hotmail.com>	
+
+	* AUTHORS: Update with our full names and email addresses
+	* src/*.[ch]: Remove C++ (//) comments , update copyright notices
+	* configure.in: Add the documentation subdirectory, spec file
+	* doc/*: Add and install the documentation, add a man page
+	* ots.spec.in: RPM build file
+	* libtool: Remove auto-generated file
+	* ltmain.sh: Add, generates libtool

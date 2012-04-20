@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<dictionary lang="welsh">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>a</word>
+<word>â</word>
+<word>ac</word>
+<word>achos</word>
+<word>am</word>
+<word>ar</word>
+<word>at</word>
+<word>chi</word>
+<word>dau</word>
+<word>dim</word>
+<word>diolch</word>
+<word>dwy</word>
+<word>e</word>
+<word>ei</word>
+<word>eto</word>
+<word>fe</word>
+<word>fi</word>
+<word>gan</word>
+<word>ger</word>
+<word>gyda</word>
+<word>heb</word>
+<word>heblaw</word>
+<word>hefyd</word>
+<word>hi</word>
+<word>hon</word>
+<word>hwn</word>
+<word>i</word>
+<word>iawn</word>
+<word>mewn</word>
+<word>na</word>
+<word>neb</word>
+<word>nes</word>
+<word>nhw</word>
+<word>ni</word>
+<word>o</word>
+<word>ond</word>
+<word>os</word>
+<word>paham</word>
+<word>pam</word>
+<word>pe</word>
+<word>popeth</word>
+<word>pwy</word>
+<word>rhag</word>
+<word>ti</word>
+<word>trwy</word>
+<word>un</word>
+<word>unwaith</word>
+<word>wedi</word>
+<word>wedyn</word>
+<word>weithiau</word>
+<word>wrth</word>
+<word>ychydig</word>
+<word>ymhlith</word>
+<word>ymlaen</word>
+<word>yn</word>
+<word>yrŵan</word>
+ </grader-tc>
+</dictionary>

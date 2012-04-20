@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<dictionary lang="yiddish">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	  <rule>כ'|</rule> 
+	  <rule>מ'|</rule> 
+	  <rule>ס'|</rule> 
+	  <rule>כ׳|</rule> 
+	  <rule>מ׳|</rule> 
+	  <rule>ס׳|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>געקומען|קום</rule>
+	  <rule>געװען|זײַן</rule> 
+	 </manual>
+	 
+    <post>
+       <rule>ן|</rule>
+       <rule>ער|</rule>
+       <rule>ע|</rule>
+       <rule>ט|</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>!</word>
+<word>'</word>
+<word>,</word>
+<word>*</word>
+<word>-</word>
+<word>--</word>
+<word>.</word>
+<word>000</word>
+<word>?</word>
+<word>|</word>
+<word>אַ</word>
+<word>אַװעק</word>
+<word>אַז</word>
+<word>אַזױ</word>
+<word>אַלע</word>
+<word>אַלעמאָל</word>
+<word>אַן</word>
+<word>אַנדער</word>
+<word>אַנדערע</word>
+<word>אַפֿילו</word>
+<word>אַצינד</word>
+<word>אַראָפּ</word>
+<word>אַרױס</word>
+<word>אַרױף</word>
+<word>אַרײַן</word>
+<word>אָבער</word>
+<word>אָדער</word>
+<word>אָט</word>
+<word>אָן</word>
+<word>אָפֿט</word>
+<word>און</word>
+<word>אונדזער</word>
+<word>אונדזערע</word>
+<word>אונטער</word>
+<word>איבער</word>
+<word>איז</word>
+<word>איך</word>
+<word>אים</word>
+<word>אין</word>
+<word>איצט</word>
+<word>איר</word>
+<word>אירע</word>
+<word>אפֿשר</word>
+<word>אױב</word>
+<word>אױך</word>
+<word>אױס</word>
+<word>אױף</word>
+<word>אױפֿן</word>
+<word>אײַער</word>
+<word>אײגן</word>
+<word>אײגענע</word>
+<word>אײגענער</word>
+<word>אײדער</word>
+<word>אײן</word>
+<word>אײנמאָל</word>
+<word>אײנס</word>
+<word>אַלײן</word>
+<word>באַקום</word>
+<word>באַקומט</word>
+<word>באַקומען </word>
+<word>ביז</word>
+<word>בין</word>
+<word>בלױז</word>
+<word>בעסער</word>
+<word>בשעת</word>
+<word>בײַ</word>
+<word>בײדע</word>
+<word>גוט</word>
+<word>גוטע</word>
+<word>גוטער</word>
+<word>גלײַך</word>
+<word>געדאַרפֿט</word>
+<word>געהאַט</word>
+<word>געזאָגט</word>
+<word>געזאָלט</word>
+<word>געטאָן</word>
+<word>געמאַכט</word>
+<word>געמוזט</word>
+<word>געמעגט</word>
+<word>געמײנט</word>
+<word>גענוג</word>
+<word>גענוצט</word>
+<word>געשטעלט</word>
+<word>געװאָלט</word>
+<word>מאָל</word>
+<word>מען</word>
+<word>נאָר</word>
+<word>אַז</word>
+<word>געװעזן</word>
+<word>נאָך</word>
+<word>געװען</word>
+<word>גײט</word>
+<word>גײען</word>
+<word>דאָ</word>
+<word>דאַרף</word>
+<word>דאָזיקע</word>
+<word>דאָזיקער</word>
+<word>דאָס</word>
+<word>דאָך</word>
+<word>דאָרט</word>
+<word>דו</word>
+<word>די</word>
+<word>דיר</word>
+<word>דיך</word>
+<word>דײַן</word>
+<word>דעם</word>
+<word>דעמאָלט</word>
+<word>דער</word>
+<word>דערפֿאַר</word>
+<word>דרײַ</word>
+<word>האָב</word>
+<word>האָבן</word>
+<word>האָט</word>
+<word>הער</word>
+<word>הײסט</word>
+<word>זאַך</word>
+<word>זאַכן</word>
+<word>זאָג</word>
+<word>זאָגן</word>
+<word>זאָל</word>
+<word>זי</word>
+<word>זיך</word>
+<word>זעט</word>
+<word>זעלביקע</word>
+<word>זעלביקער</word>
+<word>זען</word>
+<word>זײ</word>
+<word>זײַן</word>
+<word>זײַנען</word>
+<word>זענען</word>
+<word>זײער</word>
+<word>טאַקע</word>
+<word>טוט</word>
+<word>טאָן</word>
+<word>יאָ</word>
+<word>יעדער</word>
+<word>יעצט</word>
+<word>כּמעתּ</word>
+<word>לאָז</word>
+<word>לאָזט</word>
+<word>לאָמיך</word>
+<word>לאָמיר</word>
+<word>לעצט</word>
+<word>לעצטע</word>
+<word>לעצטער</word>
+<word>מאַכט</word>
+<word>מוז</word>
+<word>מיט</word>
+<word>מיך</word>
+<word>מיר</word>
+<word>מילא</word>
+<word>מעג</word>
+<word>מײַן</word>
+<word>מײנט</word>
+<word>נאָך</word>
+<word>נאָענט</word>
+<word>נאָענטע</word>
+<word>נאָר</word>
+<word>נו</word>
+<word>נוצט</word>
+<word>נוצן</word>
+<word>ניט</word>
+<word>ניצט</word>
+<word>ניצן</word>
+<word>נישט</word>
+<word>נײן</word>
+<word>סך</word>
+<word>סײַ</word>
+<word>סײַדן</word>
+<word>עטלעכע</word>
+<word>עס</word>
+<word>עפּעס</word>
+<word>ער</word>
+<word>ערשט</word>
+<word>ערשטע</word>
+<word>ערשטער</word>
+<word>פֿאַר</word>
+<word>פֿאַרשידן</word>
+<word>פֿאַרשידענע</word>
+<word>פֿאַרװאָס</word>
+<word>פֿון</word>
+<word>פֿיר</word>
+<word>פֿרי</word>
+<word>פֿריִערדיק</word>
+<word>פֿריִערדיקע</word>
+<word>פֿריִערדיקער</word>
+<word>צו</word>
+<word>צום</word>
+<word>צי</word>
+<word>צװישן</word>
+<word>צװײ</word>
+<word>קומט</word>
+<word>קומעדיק</word>
+<word>קומעדיקע</word>
+<word>קומעדיקער</word>
+<word>קען</word>
+<word>קענען</word>
+<word>קײן</word>
+<word>רבֿ</word>
+<word>שטעל</word>
+<word>שטעלט</word>
+<word>שױן</word>
+<word>װאָלט</word>
+<word>װאָס</word>
+<word>װאָסער</word>
+<word>װוּ</word>
+<word>װי</word>
+<word>װידער</word>
+<word>װיל</word>
+<word>װילט</word>
+<word>װינציק</word>
+<word>װינציקער</word>
+<word>װײַטער</word>
+<word>װעג</word>
+<word>װעגן</word>
+<word>װעט</word>
+<word>װעלכער</word>
+<word>װעלן</word>
+<word>װעמען</word>
+<word>װעמענס</word>
+<word>װען</word>
+<word>װער</word>
+<word>װײַל</word>
+ </grader-tc>
+</dictionary>

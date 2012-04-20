@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<dictionary lang="malay">
+ <stemmer> 
+ 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>ada</word>
+<word>adakalanya</word>
+<word>adalah</word>
+<word>adapun</word>
+<word>agar</word>
+<word>amin</word>
+<word>anda</word>
+<word>anti</word>
+<word>anu</word>
+<word>apa</word>
+<word>bagaimana</word>
+<word>banyak</word>
+<word>begini</word>
+<word>begitu</word>
+<word>belaka</word>
+<word>beliau</word>
+<word>berapa</word>
+<word>betapa</word>
+<word>bila</word>
+<word>demikian</word>
+<word>dengan</word>
+<word>di</word>
+<word>dia</word>
+<word>dikau</word>
+<word>hingga</word>
+<word>iaitu</word>
+<word>ialah</word>
+<word>jika</word>
+<word>jikalau</word>
+<word>justeru</word>
+<word>kami</word>
+<word>kamu</word>
+<word>kara</word>
+<word>kenapa</word>
+<word>kendati</word>
+<word>kita</word>
+<word>laku</word>
+<word>lepas</word>
+<word>mahupun</word>
+<word>maka</word>
+<word>mana</word>
+<word>mana-mana</word>
+<word>masing-masing</word>
+<word>mereka</word>
+<word>meskipun</word>
+<word>nya</word>
+<word>pada</word>
+<word>paling</word>
+<word>patik</word>
+<word>pergi</word>
+<word>puan</word>
+<word>pula</word>
+<word>saban</word>
+<word>sampai</word>
+<word>sangat</word>
+<word>saudara</word>
+<word>saya</word>
+<word>sebanyak</word>
+<word>sebanyak-banyaknya</word>
+<word>sedang</word>
+<word>segala</word>
+<word>segala-galanya</word>
+<word>sejak</word>
+<word>sekaligus</word>
+<word>sekalipun</word>
+<word>selalu</word>
+<word>semayam</word>
+<word>semesta</word>
+<word>sempena</word>
+<word>semua</word>
+<word>semuanya</word>
+<word>sendiri</word>
+<word>sendiri-sendiri</word>
+<word>sentiasa</word>
+<word>seraya</word>
+<word>serba</word>
+<word>serba aneka</word>
+<word>serba-serbi</word>
+<word>sering</word>
+<word>seringkali</word>
+<word>serta</word>
+<word>siapa</word>
+<word>sini</word>
+<word>supaya</word>
+<word>syahdan</word>
+<word>telah</word>
+<word>terbanyak</word>
+<word>tetapi</word>
+<word>tiada</word>
+<word>tiap</word>
+<word>tidak</word>
+<word>tuanku</word>
+<word>walaupun</word>
+<word>walhal</word>
+<word>walhasil</word>
+<word>wujud</word>
+<word>yang</word>
+ </grader-tc>
+</dictionary>

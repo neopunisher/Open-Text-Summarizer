@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<dictionary lang="italian">
+ <stemmer> 
+ 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>il</word>
+<word>lo</word>
+<word>l'</word>
+<word>i</word>
+<word>gli</word>
+<word>gl'</word>
+<word>la</word>
+<word>le</word>
+<word>un</word>
+<word>uno</word>
+<word>una</word>
+<word>un'</word>
+<word>io</word>
+<word>noi</word>
+<word>mio</word>
+<word>tu</word>
+<word>voi</word>
+<word>vostro</word>
+<word>lui</word>
+<word>lei</word>
+<word>egli</word>
+<word>ella</word>
+<word>esso</word>
+<word>essa</word>
+<word>loro</word>
+<word>essi</word>
+<word>esse</word>
+<word>suo</word>
+<word>sé</word>
+<word>si</word>
+<word>c'è</word>
+<word>a</word>
+<word>ad</word>
+<word>alcuno</word>
+<word>che</word>
+<word>come</word>
+<word>con</word>
+<word>così</word>
+<word>da</word>
+<word>di</word>
+<word>domani</word>
+<word>e</word>
+<word>ed</word>
+<word>in</word>
+<word>infine</word>
+<word>ma</word>
+<word>mai</word>
+<word>mentre</word>
+<word>molto</word>
+<word>né</word>
+<word>nessuno</word>
+<word>nessun</word>
+<word>nessuna</word>
+<word>nessun'</word>
+<word>niente</word>
+<word>no</word>
+<word>non</word>
+<word>nulla</word>
+<word>o</word>
+<word>oggi</word>
+<word>ora</word>
+<word>per</word>
+<word>poi</word>
+<word>poiché</word>
+<word>qualche</word>
+<word>qualcuno</word>
+<word>quando</word>
+<word>questo</word>
+<word>qui</word>
+<word>se</word>
+<word>su</word>
+<word>troppo</word>
+<word>tutto</word>
+<word>al</word>
+<word>ai</word>
+<word>allo</word>
+<word>agli</word>
+<word>alla</word>
+<word>alle</word>
+<word>all'</word>
+<word>col</word>
+<word>coi</word>
+<word>collo</word>
+<word>cogli</word>
+<word>colla</word>
+<word>colle</word>
+<word>coll'</word>
+<word>dal</word>
+<word>dai</word>
+<word>dallo</word>
+<word>dagli</word>
+<word>dalla</word>
+<word>dalle</word>
+<word>dall'</word>
+<word>del</word>
+<word>dei</word>
+<word>dello</word>
+<word>degli</word>
+<word>della</word>
+<word>delle</word>
+<word>dell'</word>
+<word>nel</word>
+<word>nei</word>
+<word>nello</word>
+<word>negli</word>
+<word>nella</word>
+<word>nelle</word>
+<word>nell'</word>
+<word>pel</word>
+<word>pei</word>
+<word>sul</word>
+<word>sui</word>
+<word>sullo</word>
+<word>sugli</word>
+<word>sulla</word>
+<word>sulle</word>
+<word>sull'</word>
+<word>primo</word>
+<word>essere</word>
+<word>sono</word>
+<word>sei</word>
+<word>è</word>
+<word>siamo</word>
+<word>siete</word>
+<word>stare</word>
+<word>sto</word>
+<word>stai</word>
+<word>sta</word>
+<word>stiamo</word>
+<word>stano</word>
+<word></word>
+<word>avere</word>
+<word>ho</word>
+<word>hai</word>
+<word>ha</word>
+<word>abbiamo</word>
+<word>avete</word>
+<word>hanno</word>
+<word>dovere</word>
+<word>potere</word>
+<word>andare</word>
+<word>va</word>
+<word></word>
+ </grader-tc>
+</dictionary>

@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<dictionary lang="catalan">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>a</word>
+<word>abans</word>
+<word>al</word>
+<word>amb</word>
+<word>ambdós</word>
+<word>anar</word>
+<word>ara</word>
+<word>baix</word>
+<word>cap</word>
+<word>cert</word>
+<word>com</word>
+<word>cuál</word>
+<word>damunt</word>
+<word>de</word>
+<word>dins</word>
+<word>doble</word>
+<word>dos</word>
+<word>dues</word>
+<word>el</word>
+<word>ell</word>
+<word>ella</word>
+<word>elles</word>
+<word>ells</word>
+<word>els</word>
+<word>en</word>
+<word>ésser</word>
+<word>estar</word>
+<word>excepte</word>
+<word>jo</word>
+<word>la</word>
+<word>les</word>
+<word>lluny</word>
+<word>lo</word>
+<word>los</word>
+<word>mai</word>
+<word>me</word>
+<word>meu</word>
+<word>meus</word>
+<word>meva</word>
+<word>meves</word>
+<word>mí</word>
+<word>na</word>
+<word>nos</word>
+<word>nosaltres</word>
+<word>nostra</word>
+<word>nostre</word>
+<word>nostres</word>
+<word>qual</word>
+<word>quals</word>
+<word>quan</word>
+<word>quelcom</word>
+<word>quin</word>
+<word>quina</word>
+<word>quines</word>
+<word>quins</word>
+<word>se</word>
+<word>ser</word>
+<word>seu</word>
+<word>seus</word>
+<word>seva</word>
+<word>seves</word>
+<word>sí</word>
+<word>tenir</word>
+<word>teu</word>
+<word>teus</word>
+<word>teva</word>
+<word>teves</word>
+<word>tu</word>
+<word>u</word>
+<word>un</word>
+<word>una</word>
+<word>unes</word>
+<word>uns</word>
+<word>vosaltres</word>
+<word>vostè</word>
+<word>vostès</word>
+<word>vostra</word>
+<word>vostre</word>
+<word>vostres</word>
+ </grader-tc>
+</dictionary>

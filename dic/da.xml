@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<dictionary lang="danish">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+	 
+	 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+ 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>aldrig</word>
+<word>anden</word>
+<word>at</word>
+<word>burde</word>
+<word>de</word>
+<word>den</word>
+<word>der</word>
+<word>det</word>
+<word>dig</word>
+<word>du</word>
+<word>eller</word>
+<word>en</word>
+<word>er</word>
+<word>et</word>
+<word>fordi</word>
+<word>fra</word>
+<word>før</word>
+<word>første</word>
+<word>gide</word>
+<word>ham</word>
+<word>han</word>
+<word>har</word>
+<word>hej</word>
+<word>hende</word>
+<word>hun</word>
+<word>hvad</word>
+<word>hvem</word>
+<word>hvilke</word>
+<word>hvilken</word>
+<word>hvilket</word>
+<word>hvis</word>
+<word>hvor</word>
+<word>hvordan</word>
+<word>hvorfor</word>
+<word>hvornår</word>
+<word>i</word>
+<word>ikke</word>
+<word>ingen</word>
+<word>ingenting</word>
+<word>ja</word>
+<word>jeg</word>
+<word>kan</word>
+<word>kunne</word>
+<word>kunne</word>
+<word>med</word>
+<word>men</word>
+<word>mens</word>
+<word>mere</word>
+<word>mest</word>
+<word>mig</word>
+<word>min</word>
+<word>måtte</word>
+<word>nej</word>
+<word>nogen</word>
+<word>noget</word>
+<word>når</word>
+<word>og</word>
+<word>om</word>
+<word>sig</word>
+<word>skulle</word>
+<word>som</word>
+<word>så</word>
+<word>tit</word>
+<word>to</word>
+<word>turde</word>
+<word>vi</word>
+<word>ville</word>
+ </grader-tc>
+</dictionary>

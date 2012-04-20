@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<dictionary lang="polish">
+ <stemmer> 
+ 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>bez</word>
+<word>dla</word>
+<word>do</word>
+<word>ja</word>
+<word>ku</word>
+<word>my</word>
+<word>na</word>
+<word>nad</word>
+<word>nie</word>
+<word>o</word>
+<word>obok</word>
+<word>od</word>
+<word>on</word>
+<word>oni</word>
+<word>po</word>
+<word>pod</word>
+<word>przeciw</word>
+<word>przeciwko</word>
+<word>przed</word>
+<word>przez</word>
+<word>robić</word>
+<word>ty</word>
+<word>u</word>
+<word>w</word>
+<word>we</word>
+<word>wy</word>
+<word>z</word>
+<word>za</word>
+<word>ze</word>
+ </grader-tc>
+</dictionary>

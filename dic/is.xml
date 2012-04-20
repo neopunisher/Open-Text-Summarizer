@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<dictionary lang="icelandic">
+ <stemmer> 
+ 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>að</word>
+<word>af</word>
+<word>andspænis</word>
+<word>annaðhvort</word>
+<word>auk</word>
+<word>austan</word>
+<word>á</word>
+<word>án</word>
+<word>ásamt</word>
+<word>bæði</word>
+<word>eða</word>
+<word>ef</word>
+<word>eftir</word>
+<word>eiga</word>
+<word>en</word>
+<word>er</word>
+<word>ert</word>
+<word>eru</word>
+<word>eruð</word>
+<word>erum</word>
+<word>ég</word>
+<word>fara</word>
+<word>fá</word>
+<word>frá</word>
+<word>fyrir</word>
+<word>fyrst</word>
+<word>gagn</word>
+<word>gagnvart</word>
+<word>gegnt</word>
+<word>gegnum</word>
+<word>geta</word>
+<word>hafa</word>
+<word>hana</word>
+<word>handa</word>
+<word>hann</word>
+<word>hans</word>
+<word>hennar</word>
+<word>henni</word>
+<word>hið</word>
+<word>hin</word>
+<word>hina</word>
+<word>hinar</word>
+<word>hinir</word>
+<word>hinn</word>
+<word>hinna</word>
+<word>hinnar</word>
+<word>hinni</word>
+<word>hins</word>
+<word>hinu</word>
+<word>hinum</word>
+<word>hjá</word>
+<word>honum</word>
+<word>hún</word>
+<word>hver</word>
+<word>hverjum</word>
+<word>hvorki</word>
+<word>hvort</word>
+<word>innan</word>
+<word>í</word>
+<word>kringum</word>
+<word>með</word>
+<word>meðal</word>
+<word>meðfram</word>
+<word>mega</word>
+<word>megin</word>
+<word>mér</word>
+<word>mig</word>
+<word>milli</word>
+<word>millum</word>
+<word>mín</word>
+<word>mót</word>
+<word>móti</word>
+<word>munu</word>
+<word>nálægt</word>
+<word>neðan</word>
+<word>nema</word>
+<word>né</word>
+<word>norðan</word>
+<word>ofan</word>
+<word>og</word>
+<word>okkur</word>
+<word>pro</word>
+<word>sakir</word>
+<word>sem</word>
+<word>sé</word>
+<word>sért</word>
+<word>séu</word>
+<word>séuð</word>
+<word>séum</word>
+<word>síðan</word>
+<word>skulu</word>
+<word>sunnan</word>
+<word>sökum</word>
+<word>til</word>
+<word>um</word>
+<word>umfram</word>
+<word>umhverfis</word>
+<word>undan</word>
+<word>undir</word>
+<word>utan</word>
+<word>úr</word>
+<word>var</word>
+<word>varst</word>
+<word>vegna</word>
+<word>vera</word>
+<word>verandi</word>
+<word>vestan</word>
+<word>við</word>
+<word>voru</word>
+<word>voruð</word>
+<word>vorum</word>
+<word>væri</word>
+<word>værir</word>
+<word>væru</word>
+<word>væruð</word>
+<word>værum</word>
+<word>yðar</word>
+<word>yður</word>
+<word>yfir</word>
+<word>ykkar</word>
+<word>ykkur</word>
+<word>það</word>
+<word>þau</word>
+<word>þá</word>
+<word>þegar</word>
+<word>þeim</word>
+<word>þeir</word>
+<word>þeirra</word>
+<word>þess</word>
+<word>þér</word>
+<word>þið</word>
+<word>þig</word>
+<word>þín</word>
+<word>þótt</word>
+<word>þú</word>
+<word>því</word>
+<word>þær</word>
+ </grader-tc>
+</dictionary>

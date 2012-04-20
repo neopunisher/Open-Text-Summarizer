@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<dictionary lang="hungarian">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>a</word>
+<word>addig</word>
+<word>ám</word>
+<word>annak</word>
+<word>annyi</word>
+<word>arra</word>
+<word>át</word>
+<word>attól</word>
+<word>az</word>
+<word>azért</word>
+<word>azok</word>
+<word>be</word>
+<word>bele</word>
+<word>belé</word>
+<word>beléd</word>
+<word>beléjük</word>
+<word>belém</word>
+<word>belénk</word>
+<word>belétek</word>
+<word>belőle</word>
+<word>belőled</word>
+<word>belőlem</word>
+<word>belőletek</word>
+<word>belőlük</word>
+<word>belőlünk</word>
+<word>benne</word>
+<word>benned</word>
+<word>bennem</word>
+<word>bennetek</word>
+<word>bennük</word>
+<word>bennünk</word>
+<word>csak</word>
+<word>de</word>
+<word>e</word>
+<word>eddig</word>
+<word>egy</word>
+<word>egyik</word>
+<word>el</word>
+<word>én</word>
+<word>engem</word>
+<word>ennek</word>
+<word>ennyi</word>
+<word>erre</word>
+<word>érte</word>
+<word>érted</word>
+<word>értem</word>
+<word>értetek</word>
+<word>értük</word>
+<word>értünk</word>
+<word>és</word>
+<word>év</word>
+<word>ez</word>
+<word>ezek</word>
+<word>ezért</word>
+<word>ezt</word>
+<word>fel</word>
+<word>fog</word>
+<word>föl</word>
+<word>ha</word>
+<word>hanem</word>
+<word>három</word>
+<word>hogy</word>
+<word>hol</word>
+<word>honnan</word>
+<word>hozzá</word>
+<word>hozzád</word>
+<word>hozzájuk</word>
+<word>hozzám</word>
+<word>hozzánk</word>
+<word>hozzátok</word>
+<word>ide</word>
+<word>igen</word>
+<word>ilyen</word>
+<word>is</word>
+<word>ismét</word>
+<word>itt</word>
+<word>jó</word>
+<word>kell</word>
+<word>két</word>
+<word>kettő</word>
+<word>ki</word>
+<word>kicsi</word>
+<word>kicsit</word>
+<word>kis</word>
+<word>le</word>
+<word>lehet</word>
+<word>lesz</word>
+<word>lett</word>
+<word>ma</word>
+<word>majdnem</word>
+<word>már</word>
+<word>más</word>
+<word>másik</word>
+<word>meddig</word>
+<word>meg</word>
+<word>még</word>
+<word>megint</word>
+<word>mellett</word>
+<word>mennyi</word>
+<word>merre</word>
+<word>mert</word>
+<word>mettől</word>
+<word>mi</word>
+<word>miért</word>
+<word>mikor</word>
+<word>milyen</word>
+<word>minden</word>
+<word>mindenki</word>
+<word>mindig</word>
+<word>minket</word>
+<word>most</word>
+<word>nagy</word>
+<word>nagyon</word>
+<word>nála</word>
+<word>nálad</word>
+<word>nálam</word>
+<word>nálatok</word>
+<word>náluk</word>
+<word>nálunk</word>
+<word>ne</word>
+<word>négy</word>
+<word>neked</word>
+<word>nekem</word>
+<word>neki</word>
+<word>nekik</word>
+<word>nektek</word>
+<word>nekünk</word>
+<word>nem</word>
+<word>ő</word>
+<word>oda</word>
+<word>ők</word>
+<word>őket</word>
+<word>olyan</word>
+<word>ön</word>
+<word>önbe</word>
+<word>önben</word>
+<word>önbol</word>
+<word>önért</word>
+<word>önhöz</word>
+<word>önnek</word>
+<word>önnel</word>
+<word>önnél</word>
+<word>önök</word>
+<word>önökbe</word>
+<word>önökben</word>
+<word>önökből</word>
+<word>önökért</word>
+<word>önöket</word>
+<word>önökhöz</word>
+<word>önökkel</word>
+<word>önöknek</word>
+<word>önöknél</word>
+<word>önökön</word>
+<word>önökre</word>
+<word>önökről</word>
+<word>önöktől</word>
+<word>önön</word>
+<word>önre</word>
+<word>önről</word>
+<word>önt</word>
+<word>öntől</word>
+<word>össze</word>
+<word>őt</word>
+<word>ott</word>
+<word>rá</word>
+<word>rád</word>
+<word>rajta</word>
+<word>rajtad</word>
+<word>rajtam</word>
+<word>rajtatok</word>
+<word>rajtuk</word>
+<word>rajtunk</word>
+<word>rájuk</word>
+<word>rám</word>
+<word>ránk</word>
+<word>rátok</word>
+<word>róla</word>
+<word>rólad</word>
+<word>rólam</word>
+<word>rólatok</word>
+<word>róluk</word>
+<word>rólunk</word>
+<word>rossz</word>
+<word>s</word>
+<word>se</word>
+<word>sem</word>
+<word>semmi</word>
+<word>senki</word>
+<word>soha</word>
+<word>sok</word>
+<word>stb</word>
+<word>szét</word>
+<word>talán</word>
+<word>te</word>
+<word>téged</word>
+<word>ti</word>
+<word>titeket</word>
+<word>tőle</word>
+<word>tőled</word>
+<word>tolem</word>
+<word>toletek</word>
+<word>tőlük</word>
+<word>tőlünk</word>
+<word>új</word>
+<word>újra</word>
+<word>vagy</word>
+<word>van</word>
+<word>vannak</word>
+<word>vele</word>
+<word>veled</word>
+<word>velem</word>
+<word>veletek</word>
+<word>velük</word>
+<word>velünk</word>
+<word>vissza</word>
+<word>volt</word>
+<word>voltak</word>
+<word></word>
+ </grader-tc>
+</dictionary>

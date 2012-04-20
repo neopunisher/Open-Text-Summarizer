@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<dictionary lang="norwegian">
+ <stemmer>
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+  
+  
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>er</word>
+<word>og</word>
+<word>det</word>
+<word>i</word>
+<word>som</word>
+<word>på</word>
+<word>å</word>
+<word>til</word>
+<word>ein</word>
+<word>at</word>
+<word>med</word>
+<word>for</word>
+<word>har</word>
+<word>av</word>
+<word>han</word>
+<word>dei</word>
+<word>om</word>
+<word>ikkje</word>
+<word>eg</word>
+<word>eit</word>
+<word>du</word>
+<word>dette</word>
+<word>kan</word>
+<word>den</word>
+<word>men</word>
+<word>ei</word>
+<word>ho</word>
+<word>vil</word>
+<word>seg</word>
+<word>var</word>
+<word>eller</word>
+<word>denne</word>
+<word>òg</word>
+<word>ut</word>
+<word>noko</word>
+<word>når</word>
+<word>frå</word>
+<word>berre</word>
+<word>andre</word>
+<word>skal</word>
+<word>her</word>
+<word>då</word>
+<word>me</word>
+<word>alle</word>
+<word>to</word>
+<word>sjølv</word>
+<word>så</word>
+<word>ser</word>
+<word>desse</word>
+<word>kjem</word>
+<word>må</word>
+<word>etter</word>
+<word>opp</word>
+<word>vere</word>
+<word>der</word>
+<word>over</word>
+<word>kva</word>
+<word>blir</word>
+<word>slik</word>
+<word>no</word>
+<word>få</word>
+<word>so</word>
+<word>ha</word>
+<word>får</word>
+<word>hadde</word>
+<word>fram</word>
+<word>inn</word>
+<word>går</word>
+<word>litt</word>
+<word>mellom</word>
+<word>tek</word>
+<word>fleire</word>
+<word>heilt</word>
+<word>veldig</word>
+<word>meir</word>
+<word>vart</word>
+<word>enn</word>
+<word>vi</word>
+<word>ved</word>
+<word>mot</word>
+<word>meg</word>
+<word>nok</word>
+<word>nokre</word>
+<word>sjå</word>
+<word>sin</word>
+<word>både</word>
+<word>same</word>
+<word>sett</word>
+<word>alt</word>
+<word>første</word>
+<word>gjev</word>
+<word>heile</word>
+<word>mest</word>
+<word>mykje</word>
+<word>hans</word>
+<word>før</word>
+<word>gjer</word>
+<word>korleis</word>
+<word>seie</word>
+<word>deg</word>
+<word>finst</word>
+<word>gjennom</word>
+<word>siste</word>
+<word>vore</word>
+<word>kunne</word>
+<word>ulike</word>
+<word>viss</word>
+<word>gå</word>
+<word>bra</word>
+<word>en</word>
+<word>kor</word>
+<word>ta</word>
+<word>vera</word>
+<word>ned</word>
+<word>si</word>
+<word>sidan</word>
+<word>sitt</word>
+<word>henne</word>
+<word>kanskje</word>
+<word>altså</word>
+<word>ville</word>
+<word>likevel</word>
+<word>tid</word>
+<word>vel</word>
+<word>anna</word>
+<word>sine</word>
+<word>under</word>
+<word>bruk</word>
+<word>fekk</word>
+<word>kvar</word>
+<word>laga</word>
+<word>like</word>
+<word>nytt</word>
+<word>ting</word>
+<word>de</word>
+<word>heller</word>
+<word>rett</word>
+<word>utan</word>
+<word>faktisk</word>
+<word>hennar</word>
+<word>saman</word>
+<word>skulle</word>
+<word>slike</word>
+<word>tre</word>
+<word>medan</word>
+<word>annan</word>
+<word>difor</word>
+<word>igjen</word>
+<word>også</word>
+<word>oss</word>
+<word>føre</word>
+<word>kom</word>
+<word>måte</word>
+<word>sagt</word>
+<word>står</word>
+<word>bli</word>
+<word>rundt</word>
+<word>tida</word>
+<word>veit</word>
+<word>finn</word>
+<word>meiner</word>
+<word>ofte</word>
+<word>gjere</word>
+<word>alltid</word>
+<word>ganske</word>
+<word>held</word>
+<word>lett</word>
+<word>elles</word>
+<word>sjølvsagt</word>
+<word>synest</word>
+<word>gjera</word>
+<word>ligg</word>
+<word>seinare</word>
+<word>styrer</word>
+<word>begge</word>
+<word>kvart</word>
+<word>bruke</word>
+<word>kome</word>
+<word>lite</word>
+<word>bruka</word>
+<word>jo</word>
+<word>din</word>
+<word>neste</word>
+<word>store</word>
+<word>fire</word>
+<word>fått</word>
+<word>kort</word>
+<word>la</word>
+<word>lenge</word>
+<word>hos</word>
+<word>nokon</word>
+<word>bør</word>
+<word>beste</word>
+<word>kven</word>
+<word>derfor</word>
+<word>nemleg</word>
+<word>slags</word>
+<word>treng</word>
+<word>grunn</word>
+<word>klart</word>
+<word>min</word>
+<word>blant</word>
+ </grader-tc>
+</dictionary>

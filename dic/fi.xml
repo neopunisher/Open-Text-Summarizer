@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<dictionary lang="finnish">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>ehkä</word>
+<word>enemmän</word>
+<word>että</word>
+<word>he</word>
+<word>hei</word>
+<word>hän</word>
+<word>ja</word>
+<word>jahka</word>
+<word>joo</word>
+<word>joskus</word>
+<word>jotta</word>
+<word>kaikki</word>
+<word>kuinka</word>
+<word>kun</word>
+<word>me</word>
+<word>mikä</word>
+<word>minä</word>
+<word>miten</word>
+<word>mutta</word>
+<word>myös</word>
+<word>ne</word>
+<word>no</word>
+<word>nyt</word>
+<word>olen</word>
+<word>paitsi</word>
+<word>sekä</word>
+<word>siis</word>
+<word>sillä</word>
+<word>sinä</word>
+<word>tahi</word>
+<word>tahikka</word>
+<word>tai</word>
+<word>taikka</word>
+<word>te</word>
+<word>tällä</word>
+<word>tämä</word>
+<word>tässä</word>
+<word>vaan</word>
+<word>vai</word>
+<word>vain</word>
+<word>vasta</word>
+<word>vielä</word>
+<word>yli</word>
+ </grader-tc>
+</dictionary>

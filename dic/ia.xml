@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<dictionary lang="Interlingua">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+ 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>duo</word>
+<word>e</word>
+<word>es</word>
+<word>esser</word>
+<word>ha</word>
+<word>haber</word>
+<word>illa</word>
+<word>illas</word>
+<word>ille</word>
+<word>illes</word>
+<word>illo</word>
+<word>illos</word>
+<word>in</word>
+<word>io</word>
+<word>la</word>
+<word>las</word>
+<word>le</word>
+<word>les</word>
+<word>lo</word>
+<word>los</word>
+<word>me</word>
+<word>minus</word>
+<word>non</word>
+<word>nos</word>
+<word>ora</word>
+<word>plus</word>
+<word>quando</word>
+<word>se</word>
+<word>sed</word>
+<word>te</word>
+<word>tu</word>
+<word>un</word>
+<word>va</word>
+<word>vader</word>
+<word>vos</word>
+ </grader-tc>
+</dictionary>

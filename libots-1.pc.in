@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libots-1
+Description: A library for auto-summarizing texts
+Version: @VERSION@
+Requires: glib-2.0
+Libs: -L${libdir} -lots-1
+Cflags: -I${includedir}/libots-1

@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<dictionary lang="dutch">
+ <stemmer> 
+ 
+ <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+   
+   
+   <manual>
+	  <rule>wrote|write</rule>
+	</manual>
+   
+    <synonyms>
+	    <rule>assist|help</rule>
+    </synonyms>
+   
+  </stemmer>
+   <parser>
+    	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>000</word>
+<word>aan</word>
+<word>achter</word>
+<word>af</word>
+<word>al</word>
+<word>als</word>
+<word>altijd</word>
+<word>andere</word>
+<word>anders</word>
+<word>ben</word>
+<word>bent</word>
+<word>bij</word>
+<word>boven</word>
+<word>bovendien</word>
+<word>daar</word>
+<word>daarom</word>
+<word>dan</word>
+<word>dat</word>
+<word>de</word>
+<word>deed</word>
+<word>desondanks</word>
+<word>deze</word>
+<word>die</word>
+<word>dit</word>
+<word>doe</word>
+<word>doen</word>
+<word>door</word>
+<word>dus</word>
+<word>echter</word>
+<word>een</word>
+<word>één</word>
+<word>en</word>
+<word>er</word>
+<word>ga</word>
+<word>gaan</word>
+<word>gaat</word>
+<word>geen</word>
+<word>gekund</word>
+<word>genoeg</word>
+<word>gij</word>
+<word>ging</word>
+<word>gisteren</word>
+<word>haar</word>
+<word>had</word>
+<word>hadden</word>
+<word>hare</word>
+<word>heb</word>
+<word>hebben</word>
+<word>heeft</word>
+<word>hem</word>
+<word>hen</word>
+<word>het</word>
+<word>hier</word>
+<word>hij</word>
+<word>hoe</word>
+<word>hoeveel</word>
+<word>hoewel</word>
+<word>hun</word>
+<word>hunne</word>
+<word>ik</word>
+<word>in</word>
+<word>is</word>
+<word>ja</word>
+<word>je</word>
+<word>jij</word>
+<word>jou</word>
+<word>jouw</word>
+<word>jouwe</word>
+<word>jullie</word>
+<word>kan</word>
+<word>kom</word>
+<word>komen</word>
+<word>komt</word>
+<word>kon</word>
+<word>konden</word>
+<word>kun</word>
+<word>kunnen</word>
+<word>kunt</word>
+<word>kwam</word>
+<word>langs</word>
+<word>maak</word>
+<word>maakt</word>
+<word>maakte</word>
+<word>maar</word>
+<word>maken</word>
+<word>me</word>
+<word>meer</word>
+<word>meest</word>
+<word>meestal</word>
+<word>met</word>
+<word>mij</word>
+<word>mijn</word>
+<word>mijne</word>
+<word>minstens</word>
+<word>moeten</word>
+<word>mogen</word>
+<word>morgen</word>
+<word>na</word>
+<word>naar</word>
+<word>naast</word>
+<word>natuurlijk</word>
+<word>neen</word>
+<word>nergens</word>
+<word>niet</word>
+<word>nog</word>
+<word>nogal</word>
+<word>nooit</word>
+<word>noord</word>
+<word>nu</word>
+<word>of</word>
+<word>om</word>
+<word>omdat</word>
+<word>onder</word>
+<word>ons</word>
+<word>onze</word>
+<word>ooit</word>
+<word>ook</word>
+<word>op</word>
+<word>over</word>
+<word>overal</word>
+<word>soms</word>
+<word>steeds</word>
+<word>straks</word>
+<word>te</word>
+<word>tegen</word>
+<word>terug</word>
+<word>toe</word>
+<word>tot</word>
+<word>tussen</word>
+<word>u</word>
+<word>uit</word>
+<word>uw</word>
+<word>uwe</word>
+<word>van</word>
+<word>veel</word>
+<word>vind</word>
+<word>vinden</word>
+<word>vindt</word>
+<word>voor</word>
+<word>vooral</word>
+<word>vrijwel</word>
+<word>waar</word>
+<word>waarom</word>
+<word>waarop</word>
+<word>want</word>
+<word>waren</word>
+<word>was</word>
+<word>wat</word>
+<word>we</word>
+<word>weer</word>
+<word>wees</word>
+<word>weest</word>
+<word>wel</word>
+<word>wie</word>
+<word>wij</word>
+<word>word</word>
+<word>worden</word>
+<word>wordt</word>
+<word>zal</word>
+<word>ze</word>
+<word>zelf</word>
+<word>zich</word>
+<word>zij</word>
+<word>zijn</word>
+<word>zijne</word>
+<word>zo</word>
+<word>zonder</word>
+<word>zou</word>
+<word>zouden</word>
+<word>zoveel</word>
+<word>zullen</word>
+<word>zult</word>
+ </grader-tc>
+</dictionary>

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<dictionary lang="ukranian">
+ <stemmer>
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+  
+  
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>іноді</word>
+<word>відкіля</word>
+<word>вітаю</word>
+<word>два</word>
+<word>де</word>
+<word>з</word>
+<word>завжди</word>
+<word>зараз</word>
+<word>ким</word>
+<word>коли</word>
+<word>котрий</word>
+<word>куди</word>
+<word>ні</word>
+<word>ніколи</word>
+<word>нікуди</word>
+<word>навіщо</word>
+<word>нагорі</word>
+<word>незабаром</word>
+<word>нуль</word>
+<word>один</word>
+<word>позаду</word>
+<word>скільки</word>
+<word>сюди</word>
+<word>так</word>
+<word>там</word>
+<word>тоді</word>
+<word>туди</word>
+<word>тут</word>
+<word>унизу</word>
+<word>усе</word>
+<word>хто</word>
+<word>часто</word>
+<word>чому</word>
+<word>що</word>
+<word>як</word>
+<word>який</word>
+ </grader-tc>
+</dictionary>

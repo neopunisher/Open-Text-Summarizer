@@ -1,0 +1,188 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT([ots],[0.4.2],[nadav256@hotmail.com])
+AC_CONFIG_SRCDIR([src/libots.h])
+
+POPT_REQUIRED=1.5
+AC_SUBST(POPT_REQUIRED)
+
+dnl This next section is courtesy gtk+
+dnl
+# Making releases:
+#   OTS_MICRO_VERSION += 1;
+#   OTS_INTERFACE_AGE += 1;
+#   OTS_BINARY_AGE += 1;
+# if any functions have been added, set OTS_INTERFACE_AGE to 0.
+# if backwards compatibility has been broken,
+# set OTS_BINARY_AGE and OTS_INTERFACE_AGE to 0.
+#
+OTS_MAJOR_VERSION=0
+OTS_MINOR_VERSION=5
+OTS_MICRO_VERSION=0
+OTS_VERSION=$OTS_MAJOR_VERSION.$OTS_MINOR_VERSION.$OTS_MICRO_VERSION
+
+AC_SUBST(OTS_MAJOR_VERSION)
+AC_SUBST(OTS_MINOR_VERSION)
+AC_SUBST(OTS_MICRO_VERSION)
+AC_SUBST(OTS_VERSION)
+
+# libtool versioning
+VERSION_INFO=`expr $OTS_MAJOR_VERSION + $OTS_MINOR_VERSION`:$OTS_MICRO_VERSION:$OTS_MINOR_VERSION
+AC_SUBST(VERSION_INFO)
+
+# For automake.
+PACKAGE=ots
+
+dnl Specify a configuration file
+dnl Initialize automake stuff
+AM_CONFIG_HEADER(ots-config.h)
+AM_INIT_AUTOMAKE($PACKAGE, $OTS_VERSION)
+AM_MAINTAINER_MODE
+
+dnl Checks for programs.
+
+AC_PROG_CC
+if test "x$GCC" = "xyes"; then
+	ANSI_CFLAGS="-Wall"
+else
+	ANSI_CFLAGS=""
+fi
+AC_SUBST(ANSI_CFLAGS)
+
+AC_PROG_INSTALL
+AC_PROG_MAKE_SET
+
+dnl AC_DISABLE_STATIC
+AC_LIBTOOL_WIN32_DLL
+AM_PROG_LIBTOOL
+
+dnl Checks for headers.
+
+AC_HEADER_STDC
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+
+AC_C_CONST
+
+PKG_CHECK_MODULES(OTS, [glib-2.0 >= 2.0 libxml-2.0 >= 2.4.23])
+AC_SUBST(OTS_LIBS)
+AC_SUBST(OTS_CFLAGS)
+
+AC_ARG_WITH(popt-prefix, [  --with-popt-prefix=DIR
+                          specify under which prefix popt is installed.], with_popt_prefix="$withval", )
+
+saved_LDFLAGS=$LDFLAGS
+
+if test "x$with_popt_prefix" != "x"; then
+   LDFLAGS="-L$with_popt_prefix/lib "$LDFLAGS
+fi
+
+POPT_LIBS=
+AC_CHECK_LIB(popt, poptParseArgvString, [POPT_LIBS="-lpopt"],
+AC_MSG_ERROR([popt 1.5 or newer is required to build ots.
+You can download the latest version from ftp://ftp.rpm.org/pub/rpm/dist/rpm-4.1.x/]))
+
+if test "x$with_popt_prefix" != "x"; then
+   POPT_LIBS="-L$with_popt_prefix/lib $POPT_LIBS"
+   CFLAGS="-I$with_popt_prefix/include $CFLAGS"
+fi
+AC_SUBST(POPT_LIBS)
+
+LDFLAGS=$saved_LDFLAGS
+
+AC_MSG_CHECKING([for native Win32])
+case "$host" in
+  *-*-mingw*)
+    native_win32=yes
+    ;;
+  *)
+    native_win32=no
+    ;;
+esac
+AC_MSG_RESULT([$native_win32])
+AM_CONDITIONAL(OS_WIN32, test "$native_win32" = yes)
+
+AC_MSG_CHECKING([for Win32 platform in general])
+case "$host" in
+  *-*-mingw*|*-*-cygwin*)
+    platform_win32=yes
+    ;;
+  *)
+    platform_win32=no
+    ;;
+esac
+AC_MSG_RESULT($platform_win32)
+AM_CONDITIONAL(PLATFORM_WIN32, test "$platform_win32" = yes)
+
+##################################################
+# Checks for gtk-doc and docbook-tools
+##################################################
+
+AC_ARG_WITH(html-dir, [  --with-html-dir=PATH    path to installed docs ])
+
+if test "x$with_html_dir" = "x" ; then
+  HTML_DIR='${datadir}/doc/libots/html'
+else
+  HTML_DIR=$with_html_dir
+fi
+
+AC_SUBST(HTML_DIR)
+
+AC_CHECK_PROG(GTKDOC, gtkdoc-mkdb, true, false)
+
+gtk_doc_min_version=0.9
+if $GTKDOC ; then 
+    gtk_doc_version=`gtkdoc-mkdb --version`
+    AC_MSG_CHECKING([gtk-doc version ($gtk_doc_version) >= $gtk_doc_min_version])
+
+    IFS="${IFS= 	}"; gtk_save_IFS="$IFS"; IFS="."
+    set $gtk_doc_version
+    for min in $gtk_doc_min_version ; do
+        cur=$1; shift
+        if test -z $min ; then break; fi
+        if test -z $cur ; then GTKDOC=false; break; fi
+        if test $cur -gt $min ; then break ; fi
+        if test $cur -lt $min ; then GTKDOC=false; break ; fi
+    done
+    IFS="$gtk_save_IFS"
+
+    if $GTKDOC ; then
+      AC_MSG_RESULT(yes)
+   else
+      AC_MSG_RESULT(no)
+   fi
+fi
+
+AC_CHECK_PROG(DB2HTML, db2html, true, false)
+AM_CONDITIONAL(HAVE_DOCBOOK, $DB2HTML)
+
+dnl Make people enable the gtk-doc stuff explicitely.
+AC_ARG_ENABLE(gtk-doc, [  --disable-gtk-doc        use gtk-doc to build documentation [default=yes]], enable_gtk_doc="$enableval", enable_gtk_doc=yes)
+
+if test x$enable_gtk_doc = xyes ; then
+  if test x$GTKDOC != xtrue ; then
+    enable_gtk_doc=no 
+  fi
+fi
+
+dnl NOTE: We need to use a separate automake conditional for this
+dnl       to make this work with the tarballs.
+AM_CONDITIONAL(ENABLE_GTK_DOC, test x$enable_gtk_doc = xyes)
+
+AC_CONFIG_FILES([
+	Makefile
+	libots-1.pc
+	ots.spec
+	src/Makefile
+	dic/Makefile
+	doc/Makefile
+	articles/Makefile
+])
+AC_OUTPUT
+
+dnl =============================================================================================
+echo "
+ots-$OTS_VERSION
+
+	prefix:                         ${prefix}
+	compiler:                       ${CC}
+"

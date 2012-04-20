@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<dictionary lang="estonian">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+	 
+	 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+ 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>aga</word>
+<word>ainult</word>
+<word>alates</word>
+<word>alati</word>
+<word>all</word>
+<word>ees</word>
+<word>ei</word>
+<word>esimene</word>
+<word>et</word>
+<word>hoolimata</word>
+<word>iga</word>
+<word>ilma</word>
+<word>ja</word>
+<word>jah</word>
+<word>jaoks</word>
+<word>jooksul</word>
+<word>juures</word>
+<word>ka</word>
+<word>kaheksa</word>
+<word>kaheksakümmend</word>
+<word>kaks</word>
+<word>kakskümmend</word>
+<word>kelle</word>
+<word>kes</word>
+<word>kolm</word>
+<word>kolmkümmend</word>
+<word>koos</word>
+<word>kui</word>
+<word>kümme</word>
+<word>kuni</word>
+<word>kus</word>
+<word>kuus</word>
+<word>kuuskümmend</word>
+<word>läbi</word>
+<word>lähed</word>
+<word>lähema</word>
+<word>lähen</word>
+<word>läks</word>
+<word>läksid</word>
+<word>läksime</word>
+<word>läksite</word>
+<word>ma</word>
+<word>me</word>
+<word>meie</word>
+<word>miks</word>
+<word>miljon</word>
+<word>mina</word>
+<word>mind</word>
+<word>minema</word>
+<word>mis</word>
+<word>missugune</word>
+<word>mõnikord</word>
+<word>mulle</word>
+<word>neli</word>
+<word>nelikümmend</word>
+<word>nende</word>
+<word>ning</word>
+<word>null</word>
+<word>nüüd</word>
+<word>oled</word>
+<word>olema</word>
+<word>oleme</word>
+<word>olen</word>
+<word>oli</word>
+<word>olnud</word>
+<word>omama</word>
+<word>on</word>
+<word>palju</word>
+<word>peal</word>
+<word>piki</word>
+<word>sa</word>
+<word>sada</word>
+<word>seal</word>
+<word>see</word>
+<word>sees</word>
+<word>seest</word>
+<word>seitse</word>
+<word>seitsekümmend</word>
+<word>sest</word>
+<word>siin</word>
+<word>siis</word>
+<word>sina</word>
+<word>sind</word>
+<word>sulle</word>
+<word>ta</word>
+<word>tagasi</word>
+<word>talle</word>
+<word>te</word>
+<word>teeb</word>
+<word>teed</word>
+<word>teen</word>
+<word>tegema</word>
+<word>tegi</word>
+<word>tehtud</word>
+<word>teie</word>
+<word>tema</word>
+<word>tuhat</word>
+<word>üheksa</word>
+<word>üheksakümmend</word>
+<word>ükskord</word>
+<word>üle</word>
+<word>ümber</word>
+<word>umbes</word>
+<word>vahel</word>
+<word>vastas</word>
+<word>vastu</word>
+<word>veel</word>
+<word>viis</word>
+<word>viiskümmend</word>
+<word>või</word>
+ </grader-tc>
+</dictionary>

@@ -1,0 +1,179 @@
+Open Text summarizer
+---------------------
+Nadav Rotem  2003
+nadav256@hotmail.com
+---------------------
+
+The open text summarizer is an open source tool for summarizing texts. The program 
+reads a text and decides which sentences are important and which are not. OTS will 
+create a short summary or will highlight the main ideas in the text.
+
+OTS is both a library and a command line tool. Word processors such as AbiWord 
+and KWord can link to the library and summarize documents while the command line tool
+lets you summarize text on the console. The program can either print the summarized
+text as text or HTML.  If in HTML, the important sentences are highlighted. 
+The program is multi lingual and works with UTF-8 encoding. 
+
+Supported languages:
+(ca,bg,cs,cy,da,de,el,en,eo,es,et,eu,fi,fr,ga,gl,he,hu,ia,id,is,it,lv,mi,ms,mt,nl,nn,
+pl,pt,ro,ru,sv,tl,tr,uk,yi)
+
+Basque			(seminal)
+Bulgarian		(seminal)
+Catalan			(seminal)
+Czech			(seminal)
+Danish			(seminal)
+Dutch
+English
+Esperanto		(seminal)
+Estonian		(seminal)
+Finnish			(seminal)
+French			(seminal)
+Galician		(seminal)
+German                  (seminal)
+Greek			(seminal)
+Hebrew
+Hungarian 		(seminal)
+Icelandic		(seminal)
+Indonesian		(seminal)
+Interlingua		(seminal)
+Irish (Gaelic)		(seminal)
+Italian			(seminal)
+Latvian			(seminal)
+Malaysian		(seminal)
+Maltese			(seminal)
+Maori			(seminal)
+Norwegian Nynorsk       (seminal)
+Polish			(seminal)
+Portuguese              (seminal)
+Romanian		(seminal)
+Russian			(seminal)
+Spanish			(seminal)
+Swedish			(seminal)
+Tagalog (Pilipino)	(seminal)
+Turkish			(seminal)
+Ukrainian		(seminal)
+Welsh			(seminal)
+Yiddish			(seminal)
+
+Command line Usage:
+
+$ ots
+--ratio [0..100]  		:select the summary ratio
+--html				:print summary in highlighted html form
+--keywords			:print key words in the article
+--dic 				:use dictionary other then english, for example 'he' or 'es'
+--about				:tells that the article talks about
+--file				:input file
+--out				:output file
+--help				:print this help screen
+
+example1:  
+	ots articles/sacbee1.txt --ratio 20 --html
+
+This command will summarize the article from the Sacramento Bee and highlight the 20% of
+sentences most important to the content of the article.
+
+example2:  
+	ots --ratio 40 --file big_article.txt
+
+This command will summarize the article down to 40% and print it.
+
+
+How it works:
+
+The Idea behind OTS is that the important ideas in an article are described with
+many of the same words while redundant information uses less technical terms
+and is not related to the main subject of the article. Important lines are lines
+that are related to the subject of the article. The subject of the article is the
+list of ideas that are most discussed in the article.
+In practice , the article is scanned once and a list of all of the words and their
+occurrence in the text is stored in a list. After sorting this list by the 
+occurrence of words in the text we will see a list similar to this:
+
+
+11 are
+17 is
+16 a
+14 Harry
+14 on
+13 Sally
+11 Love
+11 such
+4 an
+2 taxi
+1 university
+1 chicago
+1 meets
+...
+...
+
+Now we will remove all the words that are common in the English language using a
+dictionary file. Example of such words: "The","a","since","after","will". 
+These words are words that don't teach us anything about the subject of the article.
+Knowing that the word "Police" is in a given text can tell us that the article might
+talk about the police , however knowing that the word "will" is in the text can't 
+teach us anything about the subject of the text.
+
+After removing the redundant words the new list will look like this:
+
+14 Harry
+13 Sally
+11 Love
+2 taxi
+1 university
+1 chicago
+1 meets
+
+From this list we may assume that the text talks about "Harry , Sally , Love". 
+So an important sentence in the text will be a sentence that talks about Harry, 
+Sally and Love. A sentence that talks about the university of Chicago may be 
+neglected because we find the word "chicago" only once in the text, so we may assume 
+that "chicago" is not one of the main ideas in the text.  Each sentence is given 
+a grade based on the the keywords in it. A line that holds many important words will
+be given a high grade. To produce a 20% summary we print the top 20% sentences with
+the highest grade.
+
+Ots will not work on books because they cover too many topics. however, each 
+page may be fed individually, this will produce a good result. Poems or other 
+non-standard texts will not produce a good result because they are structured
+in a "funny" way.
+
+Every new language to be implemented needs to contain a list of VERY common words
+in the language. 250 words is more than enough. See en.dic for example. Writing such
+a dictionary is an iteratice process. It is suggested that the author of such a 
+dictionary will try to scan a few articles using OTS and try it with the "--keywords"
+flag on. This will tell him if OTS thinks for some reason that "his" is the subject
+of the text. If this is the case then "his" needs to be added to the dictionary.
+
+
+Stemming:
+
+stemming is the ability to take a word such as "running" and trace it back to its 
+original form to the word "run". We use this feature to group together all of the 
+the derivatives of a certain words. Now what we group together these words
+ots will know what the subject of this article is the one word "run" and not 
+("running","run", "runnable" ...). Now, when we encounter a sentence that talks 
+about some "runner" we will know to that it is related to the topic of the article. 
+
+In previous versions this has never been done because "running"!="run";
+
+The stemming support is now integrated into OTS. To allow stemming I had to create a new 
+file format that will hold the stemming rules. That format is XML based. libxml2 is being used.
+                                                                                                                            
+Example:
+                                                                                                    
+[dam]==[dams]	        stem[dam]
+[asking]==[asked] 	stem[ask]
+[build]==[building]     stem[build]
+[accidents]==[accident] stem[accident]
+[policing]==[police]    stem[polic]
+[reported]==[report]    stem[report]
+[years]==[year]         stem[year]
+[increased]==[increase] stem[increas]
+[study]==[studies]      stem[study]
+[reported]==[reports]   stem[report]
+[gates]==[gate]         stem[gat]
+[locked]==[lock]        stem[lock]
+
+

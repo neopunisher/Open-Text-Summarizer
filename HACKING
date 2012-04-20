@@ -1,0 +1,19 @@
+Priorities:
+
+1.Easy binding - allow word processors 
+2.Correctness - to be able to highlight the REALLY important stuff
+3.Language support - to be able to support as many languages as possible
+
+
+where people can contribute:
+
+1. Language translations - Create the dictionary file for your language
+2. Bug reports - sort out bugs.
+3. Build , Package , Release
+4. Website , Docs ...
+5. Get your distro to ship OTS
+
+
+
+Nadav Rotem
+<nadav256@hotmail.com>

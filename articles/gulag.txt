@@ -1,0 +1,44 @@
+The gulag condemned many of the Soviet Union’s best minds to anonymity. One of those was Myhailo Krawtchouk, a man with a still almost unrecognized role in the creation of the electronic computer.
+
+In 1937, at a time when Stalin’s show trials were in full swing, John Atanasoff, an American son of a Bulgarian immigrant, discovered a work on differential equations written by a Ukrainian mathematician, Myhailo Krawtchouk. It enthused him.
+
+Krawtchouk had become known in the West (in a French translation) after he published a new theorem, dubbed Krawtchouk polynomials, in a French journal. Here, though, was a work that had not been translated but that offered new methods of finding approximate solutions to differential equations. It was a shortcut that sliced through long equations, and for Atanasoff it sparked the notion that it might serve as the rationale for electronic computing. Five years later, in 1942, the electronic computer was born.
+
+Back in 1937, Atanasoff seems to have wanted Krawtchouk to be a midwife to his project. Excited at his discovery of Krawtchouk’s paper, Atanasoff asked the library of Iowa State University, where he worked, to order all the monographs that Krawtchouk had published between 1932 and 1936 "as well as all future issues." Somehow the papers never arrived.
+
+He decided to approach Krawtchouk himself. “I have found your series of papers on the approximate solution of differential equations very useful in my work,” he wrote in September 1937. “I would like to receive reprints of any of your papers which you have available. I am particularly interested in obtaining copies of those papers which you have published in Ukrainian journals, as these papers are almost inaccessible to me.”
+
+John Atanasoff
+Again, though, he received no reply. Two months later, in November 1937, he decided it was time to call on the services of the Ukrainian Association for Cultural Relations: “Perhaps you could ascertain whether my letter has reached Prof. Krawtchouk and if so why he has not replied,” he requested. “If any organization in Kiev will send me promptly the two monographs by Krawtchouk, I will personally or through our library make payment for them.”
+
+Krawtchouk had good reason not to reply, if he ever received the letter. In September, several days after Atanasoff wrote to Krawtchouk, Kommunist, the leading newspaper in Soviet Ukraine, published an editorial entitled "Academician Krawtchouk advertises enemies." Krawtchouk had, apparently, given a favorable review of the work of "enemies of the people" that the NKVD, the KGB of the Stalin era, had uncovered.
+
+A few months later, in February 1938, Krawtchouk was arrested for being a nationalist and a spy, convicted in a half-hour trial without defense lawyers, witnesses or jury, and sent to a labor camp in Siberia for 20 years (with five years in exile to follow). He lasted four years.
+
+Whether Atanasoff’s letter was featured in the "case" against him is unclear. It can, though, only have exacerbated Krawtchouk’s difficulties. The NKVD leafed through all foreign correspondence and, to ferret out foreign “moles,” monitored the activity of the Ukrainian Association for Cultural Relations.
+
+Krawtchouk’s background alone was enough to make him a prime candidate for “nationalist and a spy” in Stalinist times. Having been published in French, Italian, and Russian, he had too many foreign contacts. That alone was enough to warrant arrest in the Great Terror--and Krawtchouk, to boot, had Polish, Jewish, and German family ties (as well as Russian and Ukrainian).
+
+And by teaching and writing in Ukrainian, he was clinging too closely to his Ukrainian roots at a time of increasing Russification. He was also associating too closely with his Ukrainian colleagues across the border in modern-day western Ukraine, then part of Poland: A commission by the Academy of Sciences decided that his contacts with mathematicians Mykola Tchaikovsky and Volodymir Levytsky amounted to abetting spies.
+
+Not just that; he was also spreading “nationalist histories” of Ukraine to foreigners. Asked by a visiting Italian what book he would recommend on Ukrainian history, he suggested a German version of Mykhailo Hrushevsky's History of Ukraine, a book written by a nationalist in a language that was not the language of "comrades Lenin and Stalin, geniuses of mankind," the commission decided.
+
+A likely candidate for the gulag in any case, Krawtchouk must have placed himself in even greater danger when, according to the diaries of Volodymir Vernadsky, a renowned geochemist and founder of the Ukrainian Academy of Sciences, Krawtchouk wrote a letter to Stalin. What he wrote about is unknown, but it earned him a “visit” from an NKVD agent.
+
+Even in extreme circumstances, Krawtchouk, clearly either a brave or foolish man, was also a man who could be trusted and who inspired loyalty. Tortured and faced with the threat that his family would be arrested, Krawtchouk signed a confession. He retracted it, however, after the trial. Pushed to implicate his colleagues and students, Krawtchouk refused. Pressed to testify as a witness in a trial of Ukrainian intellectuals accused of forming an underground organization, Soyuz Vizvollenna Ukrainy, he again said no.
+
+In turn, eight leading mathematicians refused to denounce him. Some even gave favorable testimonies, despite the risk that they too might be arrested.
+
+By the end of the terror, a huge proportion of Ukraine’s intelligentsia had been sent to the camps or executed, including over 80 percent of the writers (noted poets Mykhola Zerov and Dmitro Zagul were friends of Krawtchouk). A man with a heart problem, Krawtchouk found digging for gold in the permafrost too much. He died a few months short of his 50th birthday.
+
+Krawtchouk's name, with few exceptions, was struck from books and journals in the Soviet Union until his partial rehabilitation in 1956. His scientific publications were hidden in special library collections and KGB archives, and his students were discouraged from continuing his research.
+
+Atanasoff too had his difficulties. Until a landmark court ruling in 1973, the first computer was thought to have been a later computer produced by other American scientists. Since then, though, he and his computer (restored at a cost of $300,000) have been honored in the history of the Information Age exhibit at the Smithsonian Museum of American History.
+
+Atanasoff never mentioned his debt to Krawtchouk’s work, even though he provided detailed descriptions of work done by other mathematicians. Publications on his computer, called Atanasoff-Berry after Atanasoff and Clifford Berry, an Iowa State graduate student, did not mention Krawtchouk. My discovery of his letters and translation in the archives is, it seems, the first time Krawtchouk’s role has come to light.
+
+The Ukrainian mathematician was, then, a victim of protracted amnesia on both sides of the Iron Curtain. Was he also a victim of the Cold War mentality? Until the end of the 1980s, Western mathematicians rarely cited his works. They named another polynomial, which Krawtchouk discovered, after a German mathematician. Certainly, Hollywood sees a Cold War mentality in the mathematical community. In the opening scene of A Beautiful Mind, Solomon Lefschetz, chairman of the mathematics department at Princeton University, is portrayed as a Cold Warrior. It was not an entirely fitting representation: In fact, Lefschetz, who also was in charge of a mathematical section of Princeton University Press, was working on translating and publishing a book by two former colleagues of Krawtchouk in Ukraine.
+
+The amnesia is now lifting. A Ukrainian journalist has written several biographical pieces on Krawtchouk, as has a fellow mathematician and gulag prisoner, Nina Virchenko. Despite Ukrainian academia’s financial straits, Krawtchouk’s work has now been republished in English. An international conference organized by Virchenko in honor of Krawtchouk in May 2002 attracted almost 500 papers from mathematicians in 18 countries.
+
+Mykhailo Krawtchouk never learned about the role that his works played in the invention of the electronic computer. If he had lived, he might not even have thought of it as his major contribution. Writing from the gulag to his wife, Krawtchouk said that he had finally managed to prove a theorem on which he had been working for 20 years. His work was confiscated, and its fate is unknown. It was perhaps destroyed, or it may have provided the basis for another major modern breakthrough. Still, at least the computer you are sitting at is a distant testimony to the skills and unfulfilled potential of a generation destroyed by Stalin.

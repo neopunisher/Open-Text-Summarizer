@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<dictionary lang="czech">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>a</word>
+<word>aby</word>
+<word>ale</word>
+<word>ani</word>
+<word>ano</word>
+<word>až</word>
+<word>být</word>
+<word>co</word>
+<word>dělat</word>
+<word>dnes</word>
+<word>do</word>
+<word>doma</word>
+<word>domů</word>
+<word>i</word>
+<word>já</word>
+<word>jak</word>
+<word>jako</word>
+<word>je</word>
+<word>jen</word>
+<word>jenom</word>
+<word>ještě</word>
+<word>ještěže</word>
+<word>ji</word>
+<word>jinak</word>
+<word>jít</word>
+<word>jsem</word>
+<word>jsi</word>
+<word>jsme</word>
+<word>jsou</word>
+<word>jste</word>
+<word>k</word>
+<word>každý</word>
+<word>kde</word>
+<word>kdo</word>
+<word>když</word>
+<word>konečně</word>
+<word>který</word>
+<word>mají</word>
+<word>mě</word>
+<word>mimochodem</word>
+<word>mít</word>
+<word>moc</word>
+<word>moci</word>
+<word>moct</word>
+<word>mohou</word>
+<word>mohu</word>
+<word>moje</word>
+<word>moji</word>
+<word>můj</word>
+<word>může</word>
+<word>my</word>
+<word>na</word>
+<word>naproti</word>
+<word>náš</word>
+<word>naše</word>
+<word>ne</word>
+<word>nebo</word>
+<word>něco</word>
+<word>někdy</word>
+<word>není</word>
+<word>nic</word>
+<word>o</word>
+<word>od</word>
+<word>on</word>
+<word>ona</word>
+<word>oni</word>
+<word>ono</word>
+<word>ony</word>
+<word>ovšem</word>
+<word>po</word>
+<word>protože</word>
+<word>samozřejmě</word>
+<word>se</word>
+<word>slečna</word>
+<word>tady</word>
+<word>tak</word>
+<word>také</word>
+<word>taky</word>
+<word>tam</word>
+<word>ten</word>
+<word>to</word>
+<word>totiž</word>
+<word>tu</word>
+<word>ty</word>
+<word>u</word>
+<word>v</word>
+<word>váš</word>
+<word>vaše</word>
+<word>ve</word>
+<word>velmi</word>
+<word>vlastní</word>
+<word>vy</word>
+<word>z</word>
+<word>za</word>
+<word>zase</word>
+<word>zde</word>
+<word>zítra</word>
+<word>znova</word>
+<word>že</word>
+ </grader-tc>
+</dictionary>

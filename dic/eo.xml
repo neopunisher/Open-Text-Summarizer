@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<dictionary lang="esperanto">
+ <stemmer> 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+	 
+	 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+ 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>ajn</word>
+<word>al</word>
+<word>almenaŭ</word>
+<word>ambaŭ</word>
+<word>ankaŭ</word>
+<word>ankoraŭ</word>
+<word>anstataŭ</word>
+<word>antaŭ</word>
+<word>antaŭen</word>
+<word>apud</word>
+<word>aŭ</word>
+<word>baldaŭ</word>
+<word>ĉar</word>
+<word>ĉe</word>
+<word>ĉi</word>
+<word>ĉio</word>
+<word>ĉirkaŭ</word>
+<word>ĉiuj</word>
+<word>ĉu</word>
+<word>da</word>
+<word>dankon</word>
+<word>de</word>
+<word>do</word>
+<word>du</word>
+<word>dum</word>
+<word>eĉ</word>
+<word>el</word>
+<word>en</word>
+<word>esti</word>
+<word>ĝi</word>
+<word>ha</word>
+<word>havi</word>
+<word>hieraŭ</word>
+<word>ili</word>
+<word>inter</word>
+<word>iri</word>
+<word>jam</word>
+<word>je</word>
+<word>jen</word>
+<word>jes</word>
+<word>ĵus</word>
+<word>kaj</word>
+<word>ke</word>
+<word>kelkaj</word>
+<word>kia</word>
+<word>kial</word>
+<word>kiam</word>
+<word>kie</word>
+<word>kiel</word>
+<word>kio</word>
+<word>kioj</word>
+<word>kiu</word>
+<word>kiuj</word>
+<word>kontraŭ</word>
+<word>kun</word>
+<word>la</word>
+<word>li</word>
+<word>malantaŭ</word>
+<word>malantaŭen</word>
+<word>malsupren</word>
+<word>mi</word>
+<word>morgaŭ</word>
+<word>multaj</word>
+<word>ne</word>
+<word>ni</word>
+<word>nu</word>
+<word>nun</word>
+<word>nur</word>
+<word>ofte</word>
+<word>per</word>
+<word>plej</word>
+<word>pli</word>
+<word>plu</word>
+<word>por</word>
+<word>post</word>
+<word>poste</word>
+<word>povi</word>
+<word>preni</word>
+<word>preskaŭ</word>
+<word>preter</word>
+<word>pri</word>
+<word>pro</word>
+<word>propra</word>
+<word>saluton</word>
+<word>se</word>
+<word>sed</word>
+<word>sen</word>
+<word>si</word>
+<word>ŝi</word>
+<word>sub</word>
+<word>super</word>
+<word>supre</word>
+<word>supren</word>
+<word>sur</word>
+<word>tia</word>
+<word>tial</word>
+<word>tie</word>
+<word>tiel</word>
+<word>tio</word>
+<word>tioj</word>
+<word>tiu</word>
+<word>tiuj</word>
+<word>tra</word>
+<word>tre</word>
+<word>tuj</word>
+<word>unu</word>
+<word>uzi</word>
+<word>vi</word>
+<word>voli</word>
+ </grader-tc>
+</dictionary>

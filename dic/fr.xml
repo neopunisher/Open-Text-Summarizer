@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<dictionary lang="french">
+ <stemmer> 
+ 
+ 
+ <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+   
+   
+   <manual>
+	  <rule>wrote|write</rule>
+	</manual>
+   
+    <synonyms>
+	    <rule>assist|help</rule>
+    </synonyms>
+    
+  </stemmer>
+   <parser>
+    	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>le</word>
+<word>la</word>
+<word>les</word>
+<word>un</word>
+<word>une</word>
+<word>je</word>
+<word>me</word>
+<word>moi</word>
+<word>mon</word>
+<word>ma</word>
+<word>mes</word>
+<word>nous</word>
+<word>notre</word>
+<word>nos</word>
+<word>tu</word>
+<word>te</word>
+<word>ton</word>
+<word>ta</word>
+<word>tes</word>
+<word>vous</word>
+<word>votre</word>
+<word>vos</word>
+<word>il</word>
+<word>lui</word>
+<word>son</word>
+<word>sa</word>
+<word>ses</word>
+<word>ils</word>
+<word>leur</word>
+<word>leurs</word>
+<word>elle</word>
+<word>elles</word>
+<word>on</word>
+<word>où</word>
+<word>quand</word>
+<word></word>
+<word>à</word>
+<word>aussi</word>
+<word>autre</word>
+<word>avec</word>
+<word>ça</word>
+<word>ce</word>
+<word>cet</word>
+<word>cette</word>
+<word>ces</word>
+<word>ceci</word>
+<word>cela</word>
+<word>chaque</word>
+<word>ci</word>
+<word>dans</word>
+<word>de</word>
+<word>en</word>
+<word>et</word>
+<word>entre</word>
+<word>ici</word>
+<word>jamais</word>
+<word>là</word>
+<word>mais</word>
+<word>même</word>
+<word>moins</word>
+<word>ne</word>
+<word>ou</word>
+<word>par</word>
+<word>parfois</word>
+<word>pas</word>
+<word>pendant</word>
+<word>plus</word>
+<word>pour</word>
+<word>pourtant</word>
+<word>que</word>
+<word>quelque</word>
+<word>qui</word>
+<word>quois</word>
+<word>rien</word>
+<word>sans</word>
+<word>si</word>
+<word>sur</word>
+<word>tellement</word>
+<word>très</word>
+<word>trop</word>
+<word>y</word>
+<word>des</word>
+<word>du</word>
+<word>n'est</word>
+<word>être</word>
+<word>suis</word>
+<word>es</word>
+<word>est</word>
+<word>sommes</word>
+<word>êtes</word>
+<word>sont</word>
+<word>étais</word>
+<word>était</word>
+<word>étions</word>
+<word>étiez</word>
+<word>étaient</word>
+<word>été</word>
+<word>avoir</word>
+<word>ai</word>
+<word>as</word>
+<word>a</word>
+<word>avons</word>
+<word>avez</word>
+<word>ont</word>
+<word>avais</word>
+<word>avait</word>
+<word>avions</word>
+<word>aviez</word>
+<word>avaient</word>
+<word>aie</word>
+<word>aies</word>
+<word>ait</word>
+<word>ayons</word>
+<word>ayez</word>
+<word>aient</word>
+<word>eu</word>
+<word>devoir</word>
+<word>dû</word>
+<word>faire</word>
+<word>fait</word>
+<word>pouvoir</word>
+<word>pu</word>
+<word>vouloir</word>
+<word>voulu</word>
+<word>aller</word>
+<word></word>
+ </grader-tc>
+</dictionary>

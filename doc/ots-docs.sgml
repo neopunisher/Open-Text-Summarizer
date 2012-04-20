@@ -1,0 +1,36 @@
+<!doctype book PUBLIC "-//OASIS//DTD DocBook V3.1//EN" [
+	<!notation PNG system "PNG">
+	<!entity % local.notation.class "| PNG">
+
+	<!entity hash "#">
+	<!entity percent "%">
+	<!entity ObjectIndex	SYSTEM "sgml/object_index.sgml">
+	<!entity TreeIndex	SYSTEM "sgml/tree_index.sgml">
+]>
+
+<book id="index">
+	<bookinfo>
+		<title>Ots Reference Manual</title>
+	</bookinfo>
+
+	<part id='ots'>
+		<title>Ots Overview</title>
+		
+		<partintro>
+		<para>The Open Text Summarizer (Ots) is library for automatically summarizing texts and is released under the GNU Public License (GPL).</para>
+		<para>Ots depends on the following libraries:
+		<variablelist>
+			<varlistentry>
+				<term>GLib</term>
+				<listitem><para>A general-purpose utility library, not specific to graphical user interfaces. GLib provides many useful data types, macros, type conversions, string utilities, file utilities, a main loop abstraction, and so on.</para></listitem>
+			</varlistentry>
+		</variablelist>
+		</para>
+		</partintro>
+
+		<index>
+		<!-- &ObjectIndex; &TreeIndex; -->
+		</index>
+	</part>
+
+</book>

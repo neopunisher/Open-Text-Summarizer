@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<dictionary lang="russian">
+ <stemmer> 
+ 
+     <step1_pre> 
+	  <rule>"|</rule> 
+	  <rule>(|</rule> 
+	 </step1_pre>
+	 
+	 
+    <step1_post>
+      <rule>."|</rule> 
+	  <rule>,"|</rule> 
+	  <rule>.|</rule>
+	  <rule>,|</rule> 
+	  <rule>"|</rule>
+	  <rule>)|</rule> 
+	  <rule>?|</rule> 
+	  <rule>:|</rule> 
+	  <rule>;|</rule> 
+	  <rule>!|</rule> 
+	 </step1_post>
+ 
+ 
+    <manual>
+	  <rule>wrote|write</rule>
+	  <rule>came|come</rule> 
+	  <rule>went|go</rule>
+	 </manual>
+	 
+    <post>
+       <rule>before1|1after</rule>
+    </post>
+   <pre>
+       <rule>before1|1after</rule>
+   </pre> 
+  </stemmer>
+   <parser>
+    
+ 	 <linebreak>
+	  <rule>."</rule>
+	  <rule>?"</rule>
+	  <rule>!"</rule>
+	  <rule>,"</rule>
+	  <rule>.</rule>
+	  <rule>?</rule>  
+	  <rule>;</rule>
+	  <rule>|</rule>
+	  <rule>!</rule>  
+	 </linebreak>
+	 
+ 	 <linedontbreak>
+	  <rule>Dr.</rule>
+	  <rule>Mr.</rule>  
+	  <rule>Mrs.</rule>
+	  <rule>U.S.</rule>  
+	  <rule>Rep.</rule>  
+	  <rule>Sen.</rule>  
+	 </linedontbreak>
+   </parser>
+ <grader-tc>
+<word>а</word>
+<word>без</word>
+<word>бытовать</word>
+<word>быть</word>
+<word>в</word>
+<word>вещь</word>
+<word>вниз</word>
+<word>внизу</word>
+<word>во</word>
+<word>все</word>
+<word>всегда</word>
+<word>всё</word>
+<word>где</word>
+<word>да</word>
+<word>даже</word>
+<word>два</word>
+<word>две</word>
+<word>для</word>
+<word>должен</word>
+<word>друго</word>
+<word>его</word>
+<word>её</word>
+<word>ей</word>
+<word>ему</word>
+<word>если</word>
+<word>же</word>
+<word>за</word>
+<word>и</word>
+<word>из</word>
+<word>из-за</word>
+<word>или</word>
+<word>им</word>
+<word>к</word>
+<word>каждый</word>
+<word>как</word>
+<word>меня</word>
+<word>мне</word>
+<word>мной</word>
+<word>может</word>
+<word>на</word>
+<word>наверх</word>
+<word>наверху</word>
+<word>над</word>
+<word>не</word>
+<word>ней</word>
+<word>нет</word>
+<word>нём</word>
+<word>нигде</word>
+<word>никто</word>
+<word>ноль</word>
+<word>о</word>
+<word>оба</word>
+<word>обе</word>
+<word>одна</word>
+<word>одно</word>
+<word>около</word>
+<word>он</word>
+<word>она</word>
+<word>оно</word>
+<word>от</word>
+<word>по</word>
+<word>пока</word>
+<word>поперёк</word>
+<word>после</word>
+<word>потом</word>
+<word>почему</word>
+<word>при</word>
+<word>с</word>
+<word>скоро</word>
+<word>сначала</word>
+<word>так</word>
+<word>также</word>
+<word>тебе</word>
+<word>тебя</word>
+<word>теперь</word>
+<word>тобой</word>
+<word>тогда</word>
+<word>тоже</word>
+<word>только</word>
+<word>ты</word>
+<word>у</word>
+<word>уже</word>
+<word>что</word>
+<word>чтобы</word>
+<word>это</word>
+<word>я</word>
+ </grader-tc>
+</dictionary>
+
