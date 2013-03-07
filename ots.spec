@@ -9,8 +9,8 @@ Group:            System Environment/Libraries
 Source:           ots-%{version}.tar.gz
 BuildRoot:        %{_tmppath}/%{name}-%{version}-root
 BuildRequires:    pkgconfig >= 0.8
-Requires:         glib2 >= @GLIB_REQUIRED@
-BuildRequires:    glib2-devel >= @GLIB_REQUIRED@
+Requires:         glib2
+BuildRequires:    glib2-devel libxml2-devel popt-devel
 
 %description
 The open text summarizer is an open source tool for summarizing texts.
@@ -31,8 +31,8 @@ Summary:          Libraries and include files for developing with libots.
 Group:            Development/Libraries
 Requires:         %{name} = %{version}
 Requires:         pkgconfig >= 0.8
-Requires:         glib2 >= @GLIB_REQUIRED@
-Requires:         glib2-devel >= @GLIB_REQUIRED@
+Requires:         glib2
+Requires:         glib2-devel libxml2-devel popt-devel
 
 
 %description devel
@@ -44,6 +44,7 @@ files to allow you to develop with libots.
 
 %build
 %configure --disable-gtk-doc
+sed -i 's/include $(top_srcdir)\/gtk-doc.make//g' doc/Makefile
 make
 
 %install
@@ -63,7 +64,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(0644, root, root, 0755)
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
 %{_libdir}/libots*
-%{_mandir}/*/*
 %{_datadir}/ots
 
 %files devel
@@ -73,6 +73,9 @@ rm -rf $RPM_BUILD_ROOT
 #%{_datadir}/doc/libots/html/*
 
 %changelog
+* Fri Mar 08 2013 Pavel Denisov <pavel.a.denisov@gmail.com>
+- fix spec
+
 * Thu Jun 05 2003 Rui Miguel Silva Seabra <rms@1407.org>
 - fix spec
 - disable gtk-doc (it's not building in RH 9,
