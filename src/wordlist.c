@@ -113,11 +113,21 @@ ots_union_list (const GList *aLst, const GList * bLst)
       insert = 1;
       for (di = (GList *) bLst; di != NULL; di = di->next)
 		{
-		 if(( li->data) && (di->data) && (((OtsWordEntery *) li->data)->word) && (((OtsWordEntery *) di->data)->word)) /*all defined?*/
-	    if (0 == g_strncasecmp ((((OtsWordEntery *) li->data)->word), /*fix me: unicode issue?*/
-				  (((OtsWordEntery *) di->data)->word), 10))
-	    insert = 0;		/* if word in B */
-
+		 if(( li->data) && (di->data) && (((OtsWordEntery *) li->data)->word) && (((OtsWordEntery *) di->data)->word))
+		/*all defined?*/
+			{
+			if (0 == g_strncasecmp ((((OtsWordEntery *) li->data)->word), (((OtsWordEntery *) di->data)->word), 10))
+				{
+				if (((OtsWordEntery *) di->data)->occ == 1)
+					{
+					insert = 0;
+					}
+				else
+					{
+					((OtsWordEntery *) li->data)->occ = ((OtsWordEntery *) di->data)->occ;
+					}
+				}
+			}
 		}
       if (insert == 1) 
 	if ((li->data))
