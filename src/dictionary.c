@@ -298,9 +298,19 @@ ots_load_xml_dictionary (OtsArticle * Doc,unsigned const char *name)
       if (0 == xmlStrcmp (tc_words->name, (const xmlChar *) "word"))
 	{
 		xmlChar *key;
+		xmlChar *occ_key;
+
 		key=xmlNodeListGetString(doc, tc_words->xmlChildrenNode,1);
-	   Doc->dict = g_list_append (Doc->dict,(gpointer)ots_new_wordEntery(key));
+		occ_key=xmlGetProp(tc_words,"occ");
+
+		OtsWordEntery *new_wordEntry = ots_new_wordEntery(key);
+		if (occ_key) {
+			new_wordEntry->occ = atof(occ_key);
+		}
+
+	   Doc->dict = g_list_append (Doc->dict,(gpointer)new_wordEntry);
       xmlFree(key);
+      xmlFree(occ_key);
    }
       tc_words = tc_words->next;
     }
